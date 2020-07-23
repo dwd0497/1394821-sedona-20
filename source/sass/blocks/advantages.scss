@@ -1,0 +1,19 @@
+.advantages__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.advantages__item {
+    background-color: #EEEEEE;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+        color: $basic-white;
+        background-color: $primary-color;
+    }
+}
+
+.advantages__item img {
+    vertical-align: bottom;
+}

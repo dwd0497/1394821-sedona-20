@@ -1,0 +1,20 @@
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-list__item a {
+    color: $basic-white;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    text-decoration: none;
+
+    background-color: $primary-color;
+
+    display: inline-block;
+    vertical-align: middle;
+    padding: 7px 0;
+    width: 100%;
+}

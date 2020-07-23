@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/ptsans.woff2") format("woff2"),
+        url("../fonts/ptsans.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/ptsansbold.woff2") format("woff2"),
+        url("../fonts/ptsansbold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@import "variables.scss";
+@import "blocks/page-body.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/nav-list.scss";
+@import "blocks/promo.scss";
+@import "blocks/promo-index.scss";
+@import "blocks/page-main.scss";
+@import "blocks/lead.scss";
+@import "blocks/advantages.scss";
+@import "blocks/advantage.scss";
+@import "blocks/advice-list.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social-list.scss";
+@import "blocks/gallery.scss";
+@import "blocks/gallery-item.scss";

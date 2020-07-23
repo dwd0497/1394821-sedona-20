@@ -1,0 +1,35 @@
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item__img {
+    vertical-align: bottom;
+}
+
+.gallery-item__content {
+    text-align: start;
+}
+
+.gallery-item__title {
+    margin: 0;
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.gallery-item__author {
+    margin: 0;
+
+    line-height: 24px;
+}
+
+.gallery-item__like-btn {
+    width: 23px;
+    height: 21px;
+}
+
+.gallery-item__likes-number {
+    font-weight: bold;
+    line-height: 24px;
+}
