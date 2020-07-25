@@ -1,14 +1,15 @@
 .page-body {
-    background-color: $basic-white;
+  background-color: $basic-white;
 
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: $basic-black;
+  font-family: $main-font;
 
-    margin: 0 auto;
-    padding: 0;
+  @include font-set (14px, 21px, normal);
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-black;
 
-    width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  min-width: 320px;
 }

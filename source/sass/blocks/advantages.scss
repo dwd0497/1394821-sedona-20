@@ -1,19 +1,12 @@
 .advantages__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  @include list-style;
 }
 
 .advantages__item {
-    background-color: #EEEEEE;
+  background-color: $secondary-color;
 
-    &:nth-child(1),
-    &:nth-child(2) {
-        color: $basic-white;
-        background-color: $primary-color;
-    }
-}
-
-.advantages__item img {
-    vertical-align: bottom;
+  &--main {
+    color: $basic-white;
+    background-color: $primary-color;
+  }
 }

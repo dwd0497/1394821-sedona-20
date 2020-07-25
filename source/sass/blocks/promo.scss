@@ -1,13 +1,11 @@
 .promo {
-    background-color: #97BAD4;
-    background-image: url("../../img/bg-back-mobile@1x.jpg");
-    background-position: bottom;
+  background-color: #97bad4;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .promo img {
-    width: 229px;
-    height: 39px;
-    padding-top: 50px;
-    padding-bottom: 65px;
-    vertical-align: bottom;
+  padding-top: 50px;
+  padding-bottom: 65px;
 }

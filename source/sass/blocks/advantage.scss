@@ -1,15 +1,9 @@
-.advantage {
-    text-align: center;
-}
-
 .advantage__title {
-    margin: 0;
+  margin: 0;
 
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
+  @include font-set(18px, 26px, bold);
 }
 
 .advantage__description {
-    margin: 0;
+  margin: 0;
 }

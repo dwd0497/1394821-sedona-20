@@ -1,14 +1,8 @@
 .social-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
+  @include list-style;
 }
 
 .social-list__link {
-    display: inline-block;
-    vertical-align: middle;
-
-    width: 46px;
-    height: 46px;
+  width: 46px;
+  height: 46px;
 }

@@ -1,19 +1,9 @@
-.lead {
-    text-align: center;
-
-    padding: 0 25px;
-}
-
 .lead__title {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
-
-    margin: 0;
+  @include font-set (18px, 26px, bold);
+  margin: 0;
 }
 
 .lead__text {
-    line-height: 26px;
-
-    margin: 0;
+  @include font-set (inherit, 26px, bold);
+  margin: 0;
 }

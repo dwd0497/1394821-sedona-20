@@ -1,21 +1,12 @@
-.page-footer {
-    text-align: center;
-}
-
 .page-footer__hashtag {
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 26px;
+  @include font-set (21px, 26px, bold);
 }
 
 .page-footer__copyright {
-    font-size: 14px;
-    line-height: 26px;
+  @include font-set (inherit, 26px);
 }
 
 .page-footer__copyright-link img {
-    width: 27px;
-    height: 34px;
-
-    vertical-align: bottom;
+  width: 27px;
+  height: 34px;
 }

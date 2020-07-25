@@ -1,25 +1,22 @@
 .advice-list {
-    margin: 0;
-    padding: 0 20px;
-    list-style: none;
+  @include list-style(0 0, 0 20);
 
-    color: $basic-black;
+  color: $basic-black;
+  text-align: left;
 
-    background-color: $basic-white;
+  background-color: $basic-white;
 }
 
 .advice-list__item {
-    padding-left: 50px;
+  padding-left: 50px;
 }
 
 .advice-list__title {
-    margin: 0;
+  margin: 0;
 
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
+  @include font-set (18px, 26px, bold);
 }
 
 .advice-list__description {
-    margin: 0;
+  margin: 0;
 }
