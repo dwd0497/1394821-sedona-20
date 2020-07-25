@@ -1,0 +1,24 @@
+.gallery-item__content {
+  text-align: left;
+}
+
+.gallery-item__title {
+  margin: 0;
+
+  @include font-set (inherit, 24px, bold);
+}
+
+.gallery-item__author {
+  margin: 0;
+
+  @include font-set (inherit, 24px);
+}
+
+.gallery-item__like-btn {
+  width: 23px;
+  height: 21px;
+}
+
+.gallery-item__likes-number {
+  @include font-set (inherit, 24px, bold);
+}

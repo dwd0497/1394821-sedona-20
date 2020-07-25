@@ -1,0 +1,14 @@
+.nav-list {
+  @include list-style;
+}
+
+.nav-list__item a {
+  color: $basic-white;
+
+  @include font-set (18px, 40px, bold);
+  text-decoration: none;
+
+  background-color: $primary-color;
+
+  padding: 7px 0;
+}

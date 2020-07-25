@@ -1,1 +1,19 @@
-// Начните писать стили здесь
+@import "../css/normalize.css";
+@import "variables";
+@import "mixins";
+@import "fonts";
+@import "base";
+@import "blocks/page-body";
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/nav-list";
+@import "blocks/promo";
+@import "blocks/page-main";
+@import "blocks/lead";
+@import "blocks/advantages";
+@import "blocks/advantage";
+@import "blocks/advice-list";
+@import "blocks/page-footer";
+@import "blocks/social-list";
+@import "blocks/gallery";
+@import "blocks/gallery-item";

@@ -1,0 +1,12 @@
+.advantages__list {
+  @include list-style;
+}
+
+.advantages__item {
+  background-color: $secondary-color;
+
+  &--main {
+    color: $basic-white;
+    background-color: $primary-color;
+  }
+}

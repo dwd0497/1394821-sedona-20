@@ -1,0 +1,22 @@
+.advice-list {
+  @include list-style(0 0, 0 20);
+
+  color: $basic-black;
+  text-align: left;
+
+  background-color: $basic-white;
+}
+
+.advice-list__item {
+  padding-left: 50px;
+}
+
+.advice-list__title {
+  margin: 0;
+
+  @include font-set (18px, 26px, bold);
+}
+
+.advice-list__description {
+  margin: 0;
+}
