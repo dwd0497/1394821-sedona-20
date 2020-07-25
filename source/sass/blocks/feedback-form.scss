@@ -1,0 +1,44 @@
+.feedback-form__group {
+  border: none;
+}
+
+.feedback-form__title {
+  @include font-set(18px, 26px, bold)
+}
+
+.feedback-form__list {
+  @include list-style
+}
+
+.feedback-form__item {
+  label {
+    @include font-set(inherit, 26px);
+  }
+
+  input {
+    font-family: inherit;
+    @include font-set(18px, 26px, bold);
+    text-transform: none;
+  }
+}
+
+.feedback-form__radio-label,
+.feedback-form__checkbox-label {
+  text-transform: none;
+  font-weight: bold;
+}
+
+.feedback-form__message {
+  font-family: inherit;
+  @include font-set(18px, 26px, bold);
+  text-transform: none;
+}
+
+.feedback-form__submit-btn {
+  @include font-set (21px, 26px, bold);
+  color: $basic-white;
+
+  background-color: $primary-color;
+
+  border: none;
+}

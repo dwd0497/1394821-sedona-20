@@ -12,6 +12,7 @@
   margin: 0;
 
   @include font-set (inherit, 24px);
+  text-transform: none;
 }
 
 .gallery-item__like-btn {

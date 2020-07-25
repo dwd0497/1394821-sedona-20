@@ -3,12 +3,11 @@
 
   font-family: $main-font;
 
-  @include font-set (14px, 21px, normal);
+  @include font-set (14px, 21px);
   text-align: center;
   text-transform: uppercase;
   color: $basic-black;
 
-  margin: 0 auto;
   padding: 0;
 
   min-width: 320px;

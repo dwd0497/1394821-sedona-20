@@ -4,6 +4,6 @@
 }
 
 .lead__text {
-  @include font-set (inherit, 26px, bold);
+  @include font-set (inherit, 26px);
   margin: 0;
 }
