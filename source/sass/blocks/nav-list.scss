@@ -1,6 +1,31 @@
 .nav-list {
   @include list-style;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
+
+.nav-list__column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    width: calc(50% - 51px);
+    justify-content: space-around;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(50% - 93px);
+  }
+}
+
 
 .nav-list__item a {
   color: $basic-white;
@@ -10,4 +35,10 @@
   background-color: $primary-color;
 
   padding: 7px 0;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+
+    background: none;
+  }
 }

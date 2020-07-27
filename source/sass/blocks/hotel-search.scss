@@ -10,7 +10,4 @@
 
 .hotel-search__btn {
   @include font-set (21px, 26px, bold);
-  color: $basic-white;
-
-  background-color: $primary-color;
 }

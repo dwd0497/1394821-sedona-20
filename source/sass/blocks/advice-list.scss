@@ -5,10 +5,23 @@
   text-align: left;
 
   background-color: $basic-white;
+
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width:$tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .advice-list__item {
   padding-left: 50px;
+
+  @media (min-width:$tablet-width) {
+    padding-left: 0;
+    width: 33%;
+  }
 }
 
 .advice-list__title {

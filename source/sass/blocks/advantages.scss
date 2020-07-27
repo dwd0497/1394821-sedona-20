@@ -1,12 +1,43 @@
 .advantages__list {
   @include list-style;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .advantages__item {
   background-color: $secondary-color;
 
+  width: 100%;
+
+  @media (min-width:$tablet-width) {
+    width: 33.333%;
+  }
+
   &--main {
     color: $basic-white;
     background-color: $primary-color;
+    width: 100%;
+  }
+}
+
+.advantages__item-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width:$tablet-width) {
+    display: flex;
+    flex-direction: row;
+
+    .advantage {
+      width: 33.333%;
+    }
+
+    img {
+      width: 66.666%;
+    }
+  }
+
+  &--reverse img {
+    order: -1;
   }
 }

@@ -1,8 +1,23 @@
 .social-list {
   @include list-style;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social-list__item {
+  margin-right: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social-list__link {
+  display: inline-block;
+  vertical-align: middle;
+
   width: 46px;
   height: 46px;
 }
