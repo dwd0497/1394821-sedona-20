@@ -5,18 +5,18 @@
 }
 
 .advantages__item {
-  background-color: $secondary-color;
-
   width: 100%;
-
-  @media (min-width: $tablet-width) {
-    width: 33.333%;
-  }
 
   &--main {
     color: $basic-white;
     background-color: $primary-color;
-    width: 100%;
+  }
+
+  &--secondary {
+    @media (min-width: $tablet-width) {
+      width: 33.333%;
+      background-color: $secondary-color;
+    }
   }
 }
 
@@ -28,12 +28,9 @@
     display: flex;
     flex-direction: row;
 
-    .advantage {
-      width: 33.333%;
-    }
-
     img {
       width: 66.666%;
+      flex-shrink: 0;
     }
   }
 
