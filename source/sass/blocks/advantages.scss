@@ -9,7 +9,7 @@
 
   width: 100%;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 33.333%;
   }
 
@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width:$tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
 

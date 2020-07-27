@@ -3,11 +3,11 @@
 }
 
 .feedback-form__title {
-  @include font-set(18px, 26px, bold)
+  @include font-set(18px, 26px, bold);
 }
 
 .feedback-form__list {
-  @include list-style
+  @include list-style;
 }
 
 .feedback-form__item {
@@ -17,6 +17,7 @@
 
   input {
     font-family: inherit;
+
     @include font-set(18px, 26px, bold);
     text-transform: none;
   }
@@ -30,6 +31,7 @@
 
 .feedback-form__message {
   font-family: inherit;
+
   @include font-set(18px, 26px, bold);
   text-transform: none;
 }
