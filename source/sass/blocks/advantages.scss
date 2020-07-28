@@ -10,31 +10,31 @@
   &--main {
     color: $basic-white;
     background-color: $primary-color;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+
+      img {
+        width: 66.6664%;
+      }
+
+      .advantage {
+        width: 33.3334%;
+      }
+    }
   }
 
   &--secondary {
     @media (min-width: $tablet-width) {
-      width: 33.333%;
+      width: 33.3334%;
       background-color: $secondary-color;
     }
   }
-}
 
-.advantages__item-wrapper {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
-
-    img {
-      width: 66.666%;
-      flex-shrink: 0;
+  &:nth-child(2n) img {
+    @media (min-width: $tablet-width) {
+      order: -1;
     }
-  }
-
-  &--reverse img {
-    order: -1;
   }
 }

@@ -1,12 +1,9 @@
 .gallery__list {
   @include list-style;
 
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -20,10 +17,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 33.333%;
+    width: 33.3334%;
   }
 
   &--first {
     width: 100%;
+
+    img {
+      width: 100%;
+    }
   }
 }

@@ -1,13 +1,10 @@
 .advice-list {
-  @include list-style(0 0, 0 20);
+  @include list-style;
 
   color: $basic-black;
   text-align: left;
 
   background-color: $basic-white;
-
-  display: flex;
-  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -20,7 +17,7 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
-    width: 33%;
+    width: 33.3334%;
   }
 }
 

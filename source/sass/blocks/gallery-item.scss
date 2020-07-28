@@ -1,5 +1,14 @@
 .gallery-item__content {
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.gallery-item img {
+  width: 100%;
 }
 
 .gallery-item__title {

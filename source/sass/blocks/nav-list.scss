@@ -1,33 +1,25 @@
 .nav-list {
   @include list-style;
 
-  display: flex;
-  flex-direction: column;
-
   @media (min-width: $tablet-width) {
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
   }
 }
 
-.nav-list__column {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-
+.nav-list__item {
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    width: calc(50% - 51px);
-    justify-content: space-around;
-  }
+    width: 20%;
 
-  @media (min-width: $desktop-width) {
-    width: calc(50% - 93px);
+    &:nth-child(2) {
+      margin-right: 20%;
+    }
   }
 }
-
 
 .nav-list__item a {
+  display: block;
+
   color: $basic-white;
 
   @include font-set (18px, 40px, bold);
@@ -37,6 +29,8 @@
   padding: 7px 0;
 
   @media (min-width: $tablet-width) {
+    display: inline;
+
     color: $basic-black;
 
     background: none;
