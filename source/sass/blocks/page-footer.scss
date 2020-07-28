@@ -1,3 +1,12 @@
+.page-footer {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .page-footer__hashtag {
   @include font-set (21px, 26px, bold);
 }

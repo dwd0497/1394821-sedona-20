@@ -1,14 +1,24 @@
 .advice-list {
-  @include list-style(0 0, 0 20);
+  @include list-style;
 
   color: $basic-black;
   text-align: left;
 
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .advice-list__item {
   padding-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    width: 33.3334%;
+  }
 }
 
 .advice-list__title {

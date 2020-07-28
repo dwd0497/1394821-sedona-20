@@ -1,8 +1,25 @@
 .nav-list {
   @include list-style;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.nav-list__item {
+  @media (min-width: $tablet-width) {
+    width: 20%;
+
+    &:nth-child(2) {
+      margin-right: 20%;
+    }
+  }
 }
 
 .nav-list__item a {
+  display: block;
+
   color: $basic-white;
 
   @include font-set (18px, 40px, bold);
@@ -10,4 +27,12 @@
   background-color: $primary-color;
 
   padding: 7px 0;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+
+    color: $basic-black;
+
+    background: none;
+  }
 }

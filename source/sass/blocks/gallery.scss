@@ -1,3 +1,30 @@
 .gallery__list {
   @include list-style;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.gallery__item {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+
+    background-color: $galery-item-bg;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 33.3334%;
+  }
+
+  &--first {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
 }
