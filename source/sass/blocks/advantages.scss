@@ -19,7 +19,7 @@
         width: 66.6664%;
       }
 
-      .advantage {
+      .advantages__item-info {
         width: 33.3334%;
       }
     }
@@ -37,4 +37,14 @@
       order: -1;
     }
   }
+}
+
+.advantages__item-title {
+  margin: 0;
+
+  @include font-set(18px, 26px, bold);
+}
+
+.advantages__item-description {
+  margin: 0;
 }
