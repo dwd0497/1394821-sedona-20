@@ -1,9 +1,103 @@
+.feedback-form {
+  span {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+
+    span {
+      display: block;
+      width: 50%;
+      text-align: right;
+    }
+  }
+}
+
 .feedback-form__group {
-  border: none;
+  @include indent-reset;
+
+  textarea {
+    width: 100%;
+
+    @include indent-reset;
+    background-color: $light-gray;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--user {
+      width: 50%;
+
+      .feedback-form__title {
+        margin: 0;
+      }
+    }
+
+    &--contacts {
+      width: 100%;
+
+      .feedback-form__item {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        text-align: left;
+      }
+    }
+
+    &--opinion {
+      order: -1;
+      width: 50%;
+
+      .feedback-form__title {
+        margin: 0;
+      }
+    }
+
+    &--places {
+      width: 100%;
+
+      .feedback-form__list {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .feedback-form__item {
+        width: 50%;
+      }
+    }
+
+    &--comment {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--contacts {
+      .feedback-form__list {
+        display: flex;
+      }
+
+      .feedback-form__item {
+        width: 50%;
+        flex-direction: row;
+      }
+    }
+
+    &--places {
+      .feedback-form__item {
+        width: 25%;
+      }
+    }
+  }
 }
 
 .feedback-form__title {
   @include font-set(18px, 26px, bold);
+
+  margin: 0 auto;
 }
 
 .feedback-form__list {
@@ -13,6 +107,7 @@
 .feedback-form__item {
   label {
     @include font-set(inherit, 26px);
+    @include indent-reset;
   }
 
   input {
@@ -20,6 +115,9 @@
 
     @include font-set(18px, 26px, bold);
     text-transform: none;
+
+    @include indent-reset;
+    background-color: $light-gray;
   }
 }
 
@@ -37,10 +135,11 @@
 }
 
 .feedback-form__submit-btn {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+
   @include font-set (21px, 26px, bold);
-  color: $basic-white;
-
-  background-color: $primary-color;
-
-  border: none;
 }

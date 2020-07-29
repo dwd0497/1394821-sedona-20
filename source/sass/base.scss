@@ -30,6 +30,8 @@ img {
   color: $basic-white;
 
   background-color: $primary-color;
+
+  @include indent-reset;
 }
 
 .container {

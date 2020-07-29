@@ -2,7 +2,7 @@
   @include list-style;
 
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -20,4 +20,10 @@
 
   width: 46px;
   height: 46px;
+
+  color: $basic-white;
+
+  background-color: $primary-color;
+
+  @include indent-reset;
 }

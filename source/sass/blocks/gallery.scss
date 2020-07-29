@@ -13,7 +13,11 @@
   @media (min-width: $tablet-width) {
     width: 50%;
 
-    background-color: $galery-item-bg;
+    background-color: $light-gray;
+
+    &:nth-child(3n) {
+      background-color: $dark-gray;
+    }
   }
 
   @media (min-width: $desktop-width) {

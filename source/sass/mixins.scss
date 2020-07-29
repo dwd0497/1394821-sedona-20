@@ -9,3 +9,9 @@
   line-height: $line-height;
   font-weight: $weight;
 }
+
+@mixin indent-reset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
