@@ -16,39 +16,81 @@
 }
 
 .feedback-form__group {
-  border: none;
-  padding: 0;
-  margin: 0;
+  @include indent-reset;
 
   textarea {
     width: 100%;
 
-    margin: 0;
-    padding: 0;
-    border: none;
+    @include indent-reset;
     background-color: $light-gray;
   }
 
   @media (min-width: $tablet-width) {
-    &:nth-child(1) {
+    &--user {
       width: 50%;
     }
 
-    &:nth-child(2) {
+    &--contacts {
       width: 100%;
+
+      .feedback-form__title {
+        margin: 0 auto;
+      }
+
+      .feedback-form__list {
+        @media (min-width: $desktop-width) {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+
+      .feedback-form__item {
+        @media (min-width: $desktop-width) {
+          width: 50%;
+        }
+      }
     }
 
-    &:nth-child(3) {
+    &--opinion {
       order: -1;
       width: 50%;
     }
 
-    &:nth-child(4) {
+    &--places {
       width: 100%;
+
+      .feedback-form__title {
+        margin: 0 auto;
+      }
+
+      .feedback-form__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        width: 66.6664%;
+        margin: 0 auto;
+
+        @media (min-width: $desktop-width) {
+          width: 100%;
+        }
+      }
+
+      .feedback-form__item {
+        width: 50%;
+
+        @media (min-width: $desktop-width) {
+          width: 25%;
+        }
+      }
     }
 
-    &:nth-child(5) {
+    &--comment {
       width: 100%;
+
+      .feedback-form__title {
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -64,10 +106,7 @@
 .feedback-form__item {
   label {
     @include font-set(inherit, 26px);
-
-    margin: 0;
-    padding: 0;
-    border: none;
+    @include indent-reset;
   }
 
   input {
@@ -76,9 +115,7 @@
     @include font-set(18px, 26px, bold);
     text-transform: none;
 
-    margin: 0;
-    padding: 0;
-    border: none;
+    @include indent-reset;
     background-color: $light-gray;
   }
 }

@@ -15,8 +15,8 @@
 
     background-color: $light-gray;
 
-    &:nth-child(3) {
-      background-color: #eaeaea;
+    &:nth-child(3n) {
+      background-color: $dark-gray;
     }
   }
 

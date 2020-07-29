@@ -20,4 +20,10 @@
 
   width: 46px;
   height: 46px;
+
+  color: $basic-white;
+
+  background-color: $primary-color;
+
+  @include indent-reset;
 }

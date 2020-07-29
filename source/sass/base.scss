@@ -31,10 +31,7 @@ img {
 
   background-color: $primary-color;
 
-  border: none;
-
-  margin: 0;
-  padding: 0;
+  @include indent-reset;
 }
 
 .container {
