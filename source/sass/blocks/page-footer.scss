@@ -1,9 +1,8 @@
 .page-footer {
   @media (min-width: $tablet-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
   }
 }
 
