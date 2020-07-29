@@ -53,42 +53,42 @@
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <form action="https://echo.htmlacademy.ru" method="POST" class="feedback__form feedback-form">
           <fieldset class="feedback-form__group feedback-form__group--user">
-            <legend class="feedback-form__title">Представьтесь</legend>
+            <legend class="feedback-form__title">Представьтесь:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
-                <label>
+                <label for="user-name">
                   Имя<sup>*</sup>:
-                  <input type="text" name="user-name" placeholder="Петр" required>
                 </label>
+                <input type="text" name="user-name" id="user-name" placeholder="Петр" required>
               </li>
               <li class="feedback-form__item">
-                <label>
+                <label for="user-surname">
                   Фамилия<sup>*</sup>:
-                  <input type="text" name="user-surname" placeholder="Иванов" required>
                 </label>
+                <input type="text" name="user-surname" id="user-surname" placeholder="Иванов" required>
               </li>
               <li class="feedback-form__item">
-                <label>
+                <label for="user-middle-name">
                   Отчество:
-                  <input type="text" name="user-middle-name" placeholder="Александрович">
                 </label>
+                <input type="text" name="user-middle-name" id="user-middle-name" placeholder="Александрович">
               </li>
             </ul>
           </fieldset>
           <fieldset class="feedback-form__group feedback-form__group--contacts">
-            <legend class="feedback-form__title">Контактная информация</legend>
+            <legend class="feedback-form__title">Контактная информация:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
-                <label>
+                <label for="user-tel">
                   Контактный телефон<sup>*</sup>:
-                  <input type="tel" name="user-tel" placeholder="Введите телефон" required>
                 </label>
+                <input type="tel" name="user-tel" id="user-tel" placeholder="Введите телефон" required>
               </li>
               <li class="feedback-form__item">
-                <label>
+                <label for="user-email">
                   Электронная почта<sup>*</sup>:
-                  <input type="email" name="user-email" placeholder="Введите e-mail" required>
                 </label>
+                <input type="email" name="user-email" id="user-email" placeholder="Введите e-mail" required>
               </li>
             </ul>
           </fieldset>
