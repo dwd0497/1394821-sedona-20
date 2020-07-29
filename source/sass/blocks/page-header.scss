@@ -1,4 +1,14 @@
+.page-header {
+  position: relative;
+}
+
 .page-header__logo {
   width: 102px;
   height: 84px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
