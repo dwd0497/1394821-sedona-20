@@ -11,14 +11,16 @@
 <body class="page-body">
   <div class="container">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logotype-mobile.svg" alt="Город Sedona" width="102" height="84">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle-btn" type="button" aria-label="Открыть меню"></button>
-        <ul class="main-nav__list nav-list">
+      <div class="page-header__row">
+        <a class="page-header__logo">
+          <img src="img/logotype-mobile.svg" alt="Город Sedona" width="102" height="84">
+        </a>
+        <button class="page-header__open-btn" type="button" aria-label="Открыть меню"></button>
+      </div>
+      <nav class="page-header__main-nav main-nav">
+        <ul class="main-nav__list nav-list nav-lsit--nojs">
           <li class="nav-list__item">
-            <a href="">
+            <a>
               Главная
             </a>
           </li>
@@ -33,7 +35,7 @@
             </a>
           </li>
           <li class="nav-list__item">
-            <a href="#">
+            <a href="https://htmlacademy.ru/intensive/adaptive">
               HTML Academy
             </a>
           </li>
@@ -126,6 +128,7 @@
       </p>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
