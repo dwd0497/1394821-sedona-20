@@ -6,25 +6,45 @@
 
   background-color: $basic-white;
 
+  padding: 35px 20px;
+
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: row;
+    padding: 60px 0;
   }
 }
 
 .advice-list__item {
-  padding-left: 50px;
+  padding-left: 52px;
+  margin-bottom: 26px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
+    padding-top: 95px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-bottom: 0;
+
     width: 33.3334%;
+
+    text-align: center;
   }
 }
 
 .advice-list__title {
   margin: 0;
+  margin-bottom: 20px;
 
   @include font-set (18px, 26px, bold);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+
+    @include font-set (21px, 26px, bold);
+  }
 }
 
 .advice-list__description {

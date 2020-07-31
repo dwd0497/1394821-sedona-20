@@ -1,6 +1,30 @@
+.lead {
+  width: 85%;
+  margin: 32px auto;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 75%;
+    margin: 43px auto 52px;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    margin: 55px auto 41px;
+  }
+}
+
 .lead__title {
   @include font-set (18px, 26px, bold);
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .lead__text {

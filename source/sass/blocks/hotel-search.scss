@@ -1,13 +1,3 @@
-.hotel-search__title {
-  @include font-set (21px, 26px, bold);
-  margin: 0;
-}
-
-.hotel-search__description {
-  @include font-set (inherit, 24px);
-  margin: 0;
-}
-
 .hotel-search__btn {
   @include font-set (21px, 26px, bold);
 }
