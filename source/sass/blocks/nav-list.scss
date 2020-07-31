@@ -39,7 +39,32 @@
   }
 
   &:last-child {
-    border-bottom: none
+    border-bottom: none;
+  }
+
+  &:hover,
+  &:focus-within {
+    background-color: $primary-color-hover;
+
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+    }
+  }
+
+  &:active {
+    background-color: $primary-color-active;
+
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+    }
+  }
+
+  &:disabled {
+    background-color: $normal-gray;
+
+    @media (min-width: $tablet-width) {
+      background-color: transparent;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -52,8 +77,6 @@
       margin-right: 20%;
     }
   }
-
-
 }
 
 .nav-list__item a {
@@ -65,12 +88,38 @@
 
   padding: 7px 0;
 
+  &:active {
+    color: rgba($color: $basic-white, $alpha: 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     display: inline;
 
     color: $basic-black;
 
     @include font-set(14px, 26px);
+
+    &:hover,
+    &:focus-within {
+      color: $primary-color;
+    }
+
+    &:active {
+      color: rgba($color: $basic-black, $alpha: 0.3);
+    }
+
+    &:not([href]) {
+      color: $active-menu-item;
+
+      &:hover,
+      &:focus-within {
+        color: $active-hover-menu-item;
+      }
+
+      &:active {
+        color: rgba($color: $active-menu-item, $alpha: 0.3);
+      }
+    }
   }
 }
 
