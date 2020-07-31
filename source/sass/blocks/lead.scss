@@ -1,37 +1,9 @@
-.lead {
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 48px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 45px;
-    margin-bottom: 56px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 55px;
-    margin-bottom: 44px;
-
-    width: 50%;
-  }
-}
-
 .lead__title {
   @include font-set (18px, 26px, bold);
   margin: 0;
-  margin-bottom: 32px;
-
-  @media (min-width: $tablet-width) {
-    @include font-set (21px, 26px, bold);
-    margin-bottom: 34px;
-  }
 }
 
 .lead__text {
   @include font-set (inherit, 26px);
   margin: 0;
-
-  @media (min-width: $tablet-width) {
-    @include font-set (inherit, 21px, bold);
-  }
 }

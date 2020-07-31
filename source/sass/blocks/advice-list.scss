@@ -6,85 +6,27 @@
 
   background-color: $basic-white;
 
-  padding-top: 37px;
-  padding-bottom: 36px;
-
-  width: 88%;
-  margin: 0 auto;
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
-    align-items: center;
-
-    padding-top: 158px;
-    padding-bottom: 36px;
-
-    width: 100%;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 162px;
-    padding-bottom: 56px;
   }
 }
 
 .advice-list__item {
   padding-left: 50px;
-  margin-bottom: 25px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
     width: 33.3334%;
-
-    text-align: center;
-
-    &:nth-child(2) {
-      order: 2;
-    }
-
-    &:last-child {
-      margin-bottom: 25px;
-
-      br {
-        display: block;
-      }
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &:nth-child(2) br {
-      display: block;
-    }
   }
 }
 
 .advice-list__title {
   margin: 0;
-  margin-bottom: 16px;
 
   @include font-set (18px, 26px, bold);
-
-  @media (min-width: $tablet-width) {
-    @include font-set (21px, 26px, bold);
-
-    margin-bottom: 23px;
-  }
 }
 
 .advice-list__description {
   margin: 0;
-
-  br {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 75%;
-    margin: 0 auto;
-  }
 }

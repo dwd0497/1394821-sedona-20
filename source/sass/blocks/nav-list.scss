@@ -39,7 +39,7 @@
   }
 
   &:last-child {
-    border-bottom: none;
+    border-bottom: none
   }
 
   @media (min-width: $tablet-width) {
@@ -52,6 +52,8 @@
       margin-right: 20%;
     }
   }
+
+
 }
 
 .nav-list__item a {

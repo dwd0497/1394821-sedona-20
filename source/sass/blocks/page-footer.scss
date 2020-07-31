@@ -1,47 +1,17 @@
 .page-footer {
-  margin-top: 27px;
-  margin-bottom: 22px;
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-
-    margin-top: 36px;
-    margin-bottom: 36px;
   }
 }
 
 .page-footer__hashtag {
   @include font-set (21px, 26px, bold);
-
-  margin: 0;
-  margin-bottom: 35px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
-}
-
-.page-footer__social-list {
-  margin-bottom: 40px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
 }
 
 .page-footer__copyright {
   @include font-set (inherit, 26px);
-  margin: 0;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.page-footer__copyright-link {
-  margin-left: 12px;
 }
 
 .page-footer__copyright-link img {
