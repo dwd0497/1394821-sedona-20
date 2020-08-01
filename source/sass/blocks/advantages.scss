@@ -2,6 +2,8 @@
   @include list-style;
   display: flex;
   flex-wrap: wrap;
+
+  counter-reset: advantages-count;
 }
 
 .advantages__item {
@@ -75,17 +77,27 @@
 
 .advantages__item-title {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @include font-set(18px, 26px, bold);
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 
     @include font-set (21px, 26px, bold);
 
     padding: 0 22px;
   }
 
-  @include font-set(18px, 26px, bold);
+  &::after {
+    counter-increment: advantages-count;
+    content: "— №"counter(advantages-count) " —";
+
+    display: block;
+    margin-top: 15px;
+
+    @include font-set (14px, 21px, normal);
+  }
 }
 
 .advantages__item-description {

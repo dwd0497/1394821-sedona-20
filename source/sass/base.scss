@@ -38,6 +38,9 @@ img {
   width: $mobile-width;
   margin: 0 auto;
 
+  background-color: $basic-white;
+  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.25);
+
   @media (min-width: $tablet-width) {
     width: $tablet-width;
   }

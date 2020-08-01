@@ -1,6 +1,8 @@
 .lead {
   width: 85%;
-  margin: 32px auto;
+
+  margin: 0 auto;
+  padding: 32px 0;
 
   br {
     display: none;
@@ -30,4 +32,10 @@
 .lead__text {
   @include font-set (inherit, 26px);
   margin: 0;
+
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

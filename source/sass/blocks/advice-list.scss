@@ -6,7 +6,7 @@
 
   background-color: $basic-white;
 
-  padding: 35px 20px;
+  padding: 26px 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -18,19 +18,51 @@
   padding-left: 52px;
   margin-bottom: 26px;
 
+  padding-top: 10px;
+
   &:last-child {
     margin-bottom: 0;
   }
 
+  background-repeat: no-repeat;
+  background-position: top left;
+
   @media (min-width: $tablet-width) {
-    padding-top: 95px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 95px 32px 0;
     margin-bottom: 0;
 
     width: 33.3334%;
 
     text-align: center;
+
+    background-position: top center;
+  }
+
+  &--housing {
+    background-image: url("../img/icon-house.svg");
+    background-size: 39px 37px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 75px 72px;
+    }
+  }
+
+  &--gifts {
+    background-image: url("../img/icon-gift.svg");
+    background-size: 32px 38px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 76px 68px;
+    }
+  }
+
+  &--food {
+    background-image: url("../img/icon-burger.svg");
+    background-size: 40px 35px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 64px 75px;
+    }
   }
 }
 

@@ -1,4 +1,5 @@
 .gallery-item {
+  padding: 20px 20px 0;
   border-bottom: 1px solid $normal-gray;
 
   &:first-child {
@@ -23,6 +24,9 @@
 .gallery-item__content {
   text-align: left;
 
+  padding-top: 10px;
+  padding-bottom: 10px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -42,11 +46,6 @@
     color: $basic-white;
   }
 }
-
-.gallery-item__content-column {
-  margin-top: 10px;
-}
-
 
 .gallery-item img {
   width: 100%;
@@ -68,12 +67,31 @@
 }
 
 .gallery-item__like-btn {
-  width: 23px;
-  height: 21px;
+  width: 55px;
+  height: 23px;
+  padding: 0;
 
-  margin-right: 15px;
-}
-
-.gallery-item__likes-number {
   @include font-set (inherit, 24px, bold);
+
+  text-align: right;
+  background-color: transparent;
+
+  border: none;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../img/icon-like.svg");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    width: 22px;
+    height: 21px;
+
+    @media (min-width: $desktop-width) {
+      opacity: 1;
+    }
+  }
 }

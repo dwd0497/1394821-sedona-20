@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.classList.remove("no-js");
+  </script>
 </head>
 
 <body class="page-body">
@@ -18,7 +21,7 @@
         <button class="page-header__open-btn" type="button" aria-label="Открыть меню"></button>
       </div>
       <nav class="page-header__main-nav main-nav">
-        <ul class="main-nav__list nav-list nav-lsit--nojs">
+        <ul class="main-nav__list nav-list">
           <li class="nav-list__item">
             <a>
               Главная
@@ -61,15 +64,15 @@
             </div>
             <img src="img/main-city-mobile@1x.jpg" alt="Город Седона" width="320" height="260">
             <ul class="advantage__sublist advice-list">
-              <li class="advice-list__item">
+              <li class="advice-list__item advice-list__item--housing">
                 <h4 class="advice-list__title">Жилье</h4>
                 <p class="advice-list__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="advice-list__item">
+              <li class="advice-list__item advice-list__item--gifts">
                 <h4 class="advice-list__title">Сувениры</h4>
                 <p class="advice-list__description">Не только китайского, но и местного производства!</p>
               </li>
-              <li class="advice-list__item">
+              <li class="advice-list__item advice-list__item--food">
                 <h4 class="advice-list__title">Еда</h4>
                 <p class="advice-list__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
               </li>
@@ -123,7 +126,7 @@
         <li class="social-list__item"><a href="" aria-label="Седона в Ютуб" class="social-list__link"></a></li>
       </ul>
       <p class="page-footer__copyright">
-        <span>Разработано</span>
+        Разработано
         <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link">
           <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy" class="page-footer__copyright-img">
         </a>
