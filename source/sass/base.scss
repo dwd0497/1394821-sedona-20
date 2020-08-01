@@ -39,7 +39,7 @@ img {
   margin: 0 auto;
 
   background-color: $basic-white;
-  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
