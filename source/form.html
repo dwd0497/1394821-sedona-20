@@ -6,16 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.classList.remove("no-js");
+  </script>
 </head>
 
 <body class="page-body">
   <div class="container">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/logotype-mobile.svg" alt="Город Sedona" width="84" height="102">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle-btn" type="button" aria-label="Открыть меню"></button>
+      <div class="page-header__row">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/logotype-mobile.svg" alt="Город Sedona" width="102" height="84">
+        </a>
+        <button class="page-header__open-btn" type="button" aria-label="Открыть меню"></button>
+      </div>
+      <nav class="page-header__main-nav main-nav">
         <ul class="main-nav__list nav-list">
           <li class="nav-list__item">
             <a href="index.html">
@@ -33,7 +38,7 @@
             </a>
           </li>
           <li class="nav-list__item">
-            <a href="#">
+            <a href="https://htmlacademy.ru/intensive/adaptive">
               HTML Academy
             </a>
           </li>
@@ -41,7 +46,7 @@
         <button class="main-nav__close-btn" type="button" aria-label="Закрыть меню"></button>
       </nav>
       <div class="promo">
-        <img src="img/sedona.svg" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="229" height="39">
+        <img src="img/text-sedona-index.svg" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="282" height="214">
       </div>
     </header>
     <main class="page-main">
@@ -156,6 +161,7 @@
       </p>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -6,25 +6,77 @@
 
   background-color: $basic-white;
 
+  padding: 26px 20px;
+
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: row;
+    padding: 60px 0;
   }
 }
 
 .advice-list__item {
-  padding-left: 50px;
+  padding-left: 52px;
+  margin-bottom: 26px;
+
+  padding-top: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  background-repeat: no-repeat;
+  background-position: top left;
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
+    padding: 95px 32px 0;
+    margin-bottom: 0;
+
     width: 33.3334%;
+
+    text-align: center;
+
+    background-position: top center;
+  }
+
+  &--housing {
+    background-image: url("../img/icon-house.svg");
+    background-size: 39px 37px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 75px 72px;
+    }
+  }
+
+  &--gifts {
+    background-image: url("../img/icon-gift.svg");
+    background-size: 32px 38px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 76px 68px;
+    }
+  }
+
+  &--food {
+    background-image: url("../img/icon-burger.svg");
+    background-size: 40px 35px;
+
+    @media (min-width: $tablet-width) {
+      background-size: 64px 75px;
+    }
   }
 }
 
 .advice-list__title {
   margin: 0;
+  margin-bottom: 20px;
 
   @include font-set (18px, 26px, bold);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+
+    @include font-set (21px, 26px, bold);
+  }
 }
 
 .advice-list__description {

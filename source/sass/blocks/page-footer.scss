@@ -1,17 +1,45 @@
 .page-footer {
+  padding-top: 38px;
+  padding-bottom: 23px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+
+    padding-top: 36px;
+    padding-bottom: 36px;
   }
 }
 
 .page-footer__hashtag {
   @include font-set (21px, 26px, bold);
+  margin: 0;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.page-footer__social-list {
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__copyright {
   @include font-set (inherit, 26px);
+  margin: 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.page-footer__copyright-link {
+  margin-left: 10px;
 }
 
 .page-footer__copyright-link img {

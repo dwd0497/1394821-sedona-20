@@ -15,7 +15,7 @@
 
     background-color: $light-gray;
 
-    &:nth-child(3n) {
+    &:nth-child(2n+1):not(:first-child) {
       background-color: $dark-gray;
     }
   }
@@ -29,6 +29,10 @@
 
     img {
       width: 100%;
+
+      @media (min-width: $tablet-width) {
+        height: 400px;
+      }
     }
   }
 }

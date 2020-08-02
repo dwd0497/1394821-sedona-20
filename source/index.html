@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.classList.remove("no-js");
+  </script>
 </head>
 
 <body class="page-body">
   <div class="container">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logotype-mobile.svg" alt="Город Sedona" width="102" height="84">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle-btn" type="button" aria-label="Открыть меню"></button>
+      <div class="page-header__row">
+        <a class="page-header__logo">
+          <img src="img/logotype-mobile.svg" alt="Город Sedona" width="102" height="84">
+        </a>
+        <button class="page-header__open-btn" type="button" aria-label="Открыть меню"></button>
+      </div>
+      <nav class="page-header__main-nav main-nav">
         <ul class="main-nav__list nav-list">
           <li class="nav-list__item">
-            <a href="">
+            <a>
               Главная
             </a>
           </li>
@@ -33,7 +38,7 @@
             </a>
           </li>
           <li class="nav-list__item">
-            <a href="#">
+            <a href="https://htmlacademy.ru/intensive/adaptive">
               HTML Academy
             </a>
           </li>
@@ -46,7 +51,7 @@
     </header>
     <main class="page-main">
       <div class="lead">
-        <h1 class="lead__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h1 class="lead__title">Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h1>
         <p class="lead__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
       <section class="advantages">
@@ -59,15 +64,15 @@
             </div>
             <img src="img/main-city-mobile@1x.jpg" alt="Город Седона" width="320" height="260">
             <ul class="advantage__sublist advice-list">
-              <li class="advice-list__item">
+              <li class="advice-list__item advice-list__item--housing">
                 <h4 class="advice-list__title">Жилье</h4>
                 <p class="advice-list__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="advice-list__item">
+              <li class="advice-list__item advice-list__item--gifts">
                 <h4 class="advice-list__title">Сувениры</h4>
                 <p class="advice-list__description">Не только китайского, но и местного производства!</p>
               </li>
-              <li class="advice-list__item">
+              <li class="advice-list__item advice-list__item--food">
                 <h4 class="advice-list__title">Еда</h4>
                 <p class="advice-list__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
               </li>
@@ -101,8 +106,10 @@
         </ol>
       </section>
       <section class="hotel-search">
-        <h2 class="hotel-search__title">Заинтересовались?</h2>
-        <p class="hotel-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <div class="lead">
+          <h2 class="lead__title">Заинтересовались?</h2>
+          <p class="lead__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        </div>
         <a href="" class="hotel-search__btn btn">Найти гостиницу</a>
       </section>
       <div class="map">
@@ -126,6 +133,7 @@
       </p>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

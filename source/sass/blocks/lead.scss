@@ -1,9 +1,41 @@
+.lead {
+  width: 85%;
+
+  margin: 0 auto;
+  padding: 32px 0;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 75%;
+    margin: 43px auto 52px;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    margin: 55px auto 41px;
+  }
+}
+
 .lead__title {
   @include font-set (18px, 26px, bold);
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .lead__text {
   @include font-set (inherit, 26px);
   margin: 0;
+
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
