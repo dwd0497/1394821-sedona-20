@@ -1,3 +1,17 @@
+.hotel-search {
+  padding-bottom: 49px;
+}
+
 .hotel-search__btn {
   @include font-set (21px, 26px, bold);
+
+  display: block;
+  padding: 16px 0;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+    padding: 16px 121px;
+    margin: 0 auto;
+  }
 }

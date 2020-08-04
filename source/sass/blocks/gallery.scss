@@ -1,3 +1,13 @@
+.gallery {
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
 .gallery__list {
   @include list-style;
 

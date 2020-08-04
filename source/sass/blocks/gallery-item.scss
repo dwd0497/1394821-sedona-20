@@ -67,7 +67,6 @@
 }
 
 .gallery-item__like-btn {
-  width: 55px;
   height: 23px;
   padding: 0;
 
@@ -80,17 +79,21 @@
 
   position: relative;
 
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    background-image: url("../img/icon-like.svg");
-    background-repeat: no-repeat;
+  display: flex;
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
+
+  svg {
     opacity: 0.3;
-    width: 22px;
-    height: 21px;
+    margin-right: 9px;
 
     @media (min-width: $desktop-width) {
+      path {
+        fill: $basic-white;
+      }
+
       opacity: 1;
     }
   }
