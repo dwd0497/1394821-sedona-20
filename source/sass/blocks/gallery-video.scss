@@ -1,4 +1,6 @@
 .gallery-video {
+  position: relative;
+
   img {
     width: 100%;
     display: block;
@@ -16,13 +18,14 @@
 
 .gallery-video__controls {
   padding: 0 20px;
-  margin-top: -47px;
 
-  position: relative;
+  position: absolute;
+  bottom: -69px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-top: -93px;
+    bottom: 0;
   }
 }
 
@@ -49,11 +52,11 @@
   height: 13px;
 
   position: absolute;
-  top: 16.5px;
+  top: 16px;
   left: 56px;
 
   @media (min-width: $tablet-width) {
-    top: 39.5px;
+    top: 40px;
     left: 204px;
   }
 }
@@ -73,22 +76,42 @@
   }
 }
 
-.gallery-video__control-btns button {
+.gallery-video__btn {
   background-color: transparent;
   border: none;
 
   padding: 0;
 
-  &:nth-child(2) {
-    margin-left: auto;
-    margin-right: 31px;
-  }
-
-  svg path {
+  svg {
     display: block;
+
+    &:hover,
+    &:focus-within {
+      fill: $light-black;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
 
     @media (min-width: $tablet-width) {
       fill: $basic-white;
+
+      &:hover,
+      &:focus-within {
+        fill: $basic-white;
+        opacity: 0.6;
+      }
+
+      &:active {
+        fill: $basic-white;
+        opacity: 0.3;
+      }
     }
+  }
+
+  &--subs {
+    margin-left: auto;
+    margin-right: 31px;
   }
 }

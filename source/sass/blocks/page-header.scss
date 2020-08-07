@@ -6,10 +6,12 @@
 .page-header__row {
   height: $nav-height;
   position: relative;
-  z-index: 3;
+  z-index: 5;
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
     margin-top: -$nav-height;
+    width: 20%;
   }
 }
 
@@ -65,4 +67,6 @@
 
 .page-header__main-nav {
   order: -1;
+
+  z-index: 3;
 }

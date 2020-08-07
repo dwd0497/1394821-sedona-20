@@ -110,12 +110,12 @@
       }
     }
 
-    input {
-      display: none;
+    input:checked + .feedback-form__radio-label::after {
+      display: block;
+    }
 
-      &:checked + .feedback-form__radio-label::after {
-        display: block;
-      }
+    input:focus + .feedback-form__radio-label::before {
+      outline: 2px solid $outline-color;
     }
   }
 
@@ -139,6 +139,14 @@
       border-radius: 50%;
     }
 
+    &:hover::before {
+      background-color: $normal-gray;
+    }
+
+    &:active::before {
+      background-color: $extra-dark-gray;
+    }
+
     &::after {
       content: "";
       width: 20px;
@@ -152,6 +160,10 @@
       border-radius: 50%;
 
       display: none;
+    }
+
+    &:active::after {
+      opacity: 0.3;
     }
   }
 
@@ -170,12 +182,12 @@
       }
     }
 
-    input {
-      display: none;
+    input:checked + .feedback-form__checkbox-label::after {
+      display: block;
+    }
 
-      &:checked + .feedback-form__checkbox-label::after {
-        display: block;
-      }
+    input:focus + .feedback-form__checkbox-label::before {
+      outline: 2px solid $outline-color;
     }
   }
 
@@ -200,6 +212,14 @@
       border-radius: 5px;
     }
 
+    &:hover::before {
+      background-color: $normal-gray;
+    }
+
+    &:active::before {
+      background-color: $extra-dark-gray;
+    }
+
     &::after {
       content: "";
       width: 24px;
@@ -214,6 +234,10 @@
       background-position: center;
 
       display: none;
+    }
+
+    &:active::after {
+      opacity: 0.3;
     }
   }
 
@@ -237,7 +261,7 @@
         position: absolute;
         width: 25%;
         height: 1px;
-        background-color: #dbdbdb;
+        background-color: $dividing-line;
         z-index: 1;
       }
 
@@ -248,7 +272,7 @@
         position: absolute;
         width: 25%;
         height: 1px;
-        background-color: #dbdbdb;
+        background-color: $dividing-line;
         z-index: 1;
       }
 
@@ -285,7 +309,7 @@
         position: absolute;
         width: 25%;
         height: 1px;
-        background-color: #dbdbdb;
+        background-color: $dividing-line;
         z-index: 1;
       }
 
@@ -296,7 +320,7 @@
         position: absolute;
         width: 25%;
         height: 1px;
-        background-color: #dbdbdb;
+        background-color: $dividing-line;
         z-index: 1;
       }
 
@@ -332,7 +356,7 @@
         position: absolute;
         width: 25%;
         height: 1px;
-        background-color: #dbdbdb;
+        background-color: $dividing-line;
         z-index: 1;
       }
 
@@ -343,7 +367,7 @@
         position: absolute;
         width: 25%;
         height: 1px;
-        background-color: #dbdbdb;
+        background-color: $dividing-line;
         z-index: 1;
       }
     }
@@ -439,6 +463,16 @@
 
     @include indent-reset;
     background-color: $light-gray;
+
+    &:hover {
+      background-color: $normal-gray;
+    }
+
+    &:focus {
+      background-color: $basic-white;
+      outline: 4px solid $normal-gray;
+      outline-offset: -4px;
+    }
   }
 }
 

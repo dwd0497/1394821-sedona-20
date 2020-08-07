@@ -46,7 +46,7 @@
         <button class="main-nav__close-btn" type="button" aria-label="Закрыть меню"></button>
       </nav>
       <div class="promo">
-        <img src="img/text-sedona-index.svg" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="282" height="214">
+        <img src="img/text-sedona.svg" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="282" height="214">
       </div>
     </header>
     <main class="page-main">
@@ -101,15 +101,15 @@
             <legend class="feedback-form__title">Ваше общее впечатление:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
-                <input class="feedback-form__radio radio" type="radio" value="positiv" name="impression" id="impression-positiv" checked>
+                <input class="visually-hidden" type="radio" value="positiv" name="impression" id="impression-positiv" checked>
                 <label for="impression-positiv" class="feedback-form__radio-label">Скорее положительное</label>
               </li>
               <li class="feedback-form__item">
-                <input class="feedback-form__radio radio" type="radio" value="negative" name="impression" id="impression-negative">
+                <input class="visually-hidden" type="radio" value="negative" name="impression" id="impression-negative">
                 <label for="impression-negative" class="feedback-form__radio-label">Скорее отицательное</label>
               </li>
               <li class="feedback-form__item">
-                <input class="feedback-form__radio radio" type="radio" value="neutral" name="impression" id="impression-neutral">
+                <input class="visually-hidden" type="radio" value="neutral" name="impression" id="impression-neutral">
                 <label for="impression-neutral" class="feedback-form__radio-label">Затрудняюсь ответить</label>
               </li>
             </ul>
@@ -118,19 +118,19 @@
             <legend class="feedback-form__title">Посещенные достопримечательности:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
-                <input class="feedback-form__checkbox checkbox" type="checkbox" name="devils-bridge" id="devils-bridge" checked>
+                <input class="visually-hidden" type="checkbox" name="devils-bridge" id="devils-bridge" checked>
                 <label for="devils-bridge" class="feedback-form__checkbox-label">Мост Дьявола</label>
               </li>
               <li class="feedback-form__item">
-                <input class="feedback-form__checkbox checkbox" type="checkbox" name="bell-mountain" id="bell-mountain" checked>
+                <input class="visually-hidden" type="checkbox" name="bell-mountain" id="bell-mountain" checked>
                 <label for="bell-mountain" class="feedback-form__checkbox-label">Гора-Колокол</label>
               </li>
               <li class="feedback-form__item">
-                <input class="feedback-form__checkbox checkbox" type="checkbox" name="slide-park" id="slide-park" checked>
+                <input class="visually-hidden" type="checkbox" name="slide-park" id="slide-park" checked>
                 <label for="slide-park" class="feedback-form__checkbox-label">Слайд-парк</label>
               </li>
               <li class="feedback-form__item">
-                <input class="feedback-form__checkbox checkbox" type="checkbox" name="red-rock" id="red-rock">
+                <input class="visually-hidden" type="checkbox" name="red-rock" id="red-rock">
                 <label for="red-rock" class="feedback-form__checkbox-label">Красные скалы</label>
               </li>
             </ul>
@@ -139,7 +139,7 @@
             <legend class="feedback-form__title">Опишите свои эмоции:</legend>
             <textarea name="" class="feedback-form__message" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
-          <button class="feedback-form__submit-btn btn" type="submit">Отправить отзыв</button>
+          <button class="btn feedback-form__submit-btn" type="submit">Отправить отзыв</button>
           <span><sup>*</sup> — обязательные поля</span>
         </form>
       </section>
