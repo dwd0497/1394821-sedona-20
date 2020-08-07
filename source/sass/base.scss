@@ -32,6 +32,19 @@ img {
   background-color: $primary-color;
 
   @include indent-reset;
+
+  &:hover,
+  &:focus-within {
+    background-color: $primary-color-hover;
+  }
+
+  &:active {
+    background-color: $primary-color-active;
+  }
+
+  &:disabled {
+    background-color: $normal-gray;
+  }
 }
 
 .container {

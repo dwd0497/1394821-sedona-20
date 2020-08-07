@@ -36,13 +36,25 @@
 
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .page-footer__copyright-link {
   margin-left: 10px;
 }
 
-.page-footer__copyright-link img {
+.page-footer__copyright-link svg {
+  display: block;
   width: 27px;
   height: 34px;
+
+  &:hover,
+  &:focus-within {
+    fill: $primary-color;
+  }
+
+  &:active {
+    fill: $basic-black;
+    opacity: 0.3;
+  }
 }

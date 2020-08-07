@@ -27,6 +27,37 @@
 
   @include indent-reset;
 
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--twitter::after {
+    width: 18px;
+    height: 15px;
+    background-image: url("../img/icon-twitter.svg");
+  }
+
+  &--facebook::after {
+    width: 9px;
+    height: 19px;
+    background-image: url("../img/icon-facebook.svg");
+  }
+
+  &--youtube::after {
+    width: 20px;
+    height: 14px;
+    background-image: url("../img/icon-youtube.svg");
+  }
+
   &:hover,
   &:focus-within {
     background-color: $primary-color-hover;
@@ -34,5 +65,9 @@
 
   &:active {
     background-color: $primary-color-active;
+
+    &::after {
+      opacity: 0.3;
+    }
   }
 }

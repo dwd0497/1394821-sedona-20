@@ -1,6 +1,13 @@
 .gallery-video {
+  position: relative;
+
   img {
     width: 100%;
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      height: 500px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -9,12 +16,33 @@
   }
 }
 
+.gallery-video__controls {
+  padding: 0 20px;
+
+  position: absolute;
+  bottom: -69px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    bottom: 0;
+  }
+}
+
 .gallery-video__scrollbar {
   background-color: rgba($color: $basic-black, $alpha: 0.6);
+  padding: 22px 23px;
+
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 166px 45px 93px;
+  }
 }
 
 .gallery-video__scale {
   background-color: rgba($color: $basic-white, $alpha: 0.2);
+  height: 3px;
 }
 
 .gallery-video__toggle {
@@ -22,4 +50,68 @@
   border-radius: 50%;
   width: 13px;
   height: 13px;
+
+  position: absolute;
+  top: 16px;
+  left: 56px;
+
+  @media (min-width: $tablet-width) {
+    top: 40px;
+    left: 204px;
+  }
+}
+
+.gallery-video__control-btns {
+  background-color: $normal-gray;
+  padding: 23px;
+
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    top: 13px;
+  }
+}
+
+.gallery-video__btn {
+  background-color: transparent;
+  border: none;
+
+  padding: 0;
+
+  svg {
+    display: block;
+
+    &:hover,
+    &:focus-within {
+      fill: $light-black;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    @media (min-width: $tablet-width) {
+      fill: $basic-white;
+
+      &:hover,
+      &:focus-within {
+        fill: $basic-white;
+        opacity: 0.6;
+      }
+
+      &:active {
+        fill: $basic-white;
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &--subs {
+    margin-left: auto;
+    margin-right: 31px;
+  }
 }
