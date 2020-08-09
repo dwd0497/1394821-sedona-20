@@ -15,8 +15,12 @@
   <div class="container">
     <header class="page-header">
       <div class="page-header__row">
-        <a class="page-header__logo" href="index.html">
-          <img src="img/logotype-mobile.svg" alt="Город Sedona" width="102" height="84">
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logotype-mobile.svg" alt="Город Sedona" width="102" height="84">
+          </picture>
         </a>
         <button class="page-header__open-btn" type="button" aria-label="Открыть меню"></button>
       </div>

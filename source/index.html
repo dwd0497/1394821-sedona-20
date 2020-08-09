@@ -16,7 +16,11 @@
     <header class="page-header">
       <div class="page-header__row">
         <a class="page-header__logo">
-          <img src="img/logotype-mobile.svg" alt="Город Sedona" width="102" height="84">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logotype-mobile.svg" alt="Город Sedona" width="102" height="84">
+          </picture>
         </a>
         <button class="page-header__open-btn" type="button" aria-label="Открыть меню"></button>
       </div>
@@ -62,7 +66,11 @@
               <h3 class="advantages__item-title">Настоящий городок</h3>
               <p class="advantages__item-description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img src="img/main-city-mobile@1x.jpg" alt="Город Седона" width="320" height="260">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+              <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Город Седона" width="320" height="260">
+            </picture>
             <ul class="advantage__sublist advice-list">
               <li class="advice-list__item advice-list__item--housing">
                 <h4 class="advice-list__title">Жилье</h4>
@@ -83,7 +91,11 @@
               <h3 class="advantages__item-title">Там есть мост дьявола</h3>
               <p class="advantages__item-description">Да, по нему модно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола" width="320" height="260">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg" alt="Мост дьявола" width="320" height="260">
+            </picture>
           </li>
           <li class="advantages__item  advantages__item--secondary">
             <div class="advantages__item-info">

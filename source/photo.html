@@ -15,8 +15,12 @@
   <div class="container">
     <header class="page-header">
       <div class="page-header__row">
-        <a href="index.html" class="page-header__logo">
-          <img src="img/logotype-mobile.svg" alt="Город Sedona" width="102" height="84">
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logotype-mobile.svg" alt="Город Sedona" width="102" height="84">
+          </picture>
         </a>
         <button class="page-header__open-btn" type="button" aria-label="Открыть меню"></button>
       </div>
@@ -58,7 +62,11 @@
         <h2 class="visually-hidden">Фотогаллерея</h2>
         <ul class="gallery__list">
           <li class="gallery__item gallery__item--first gallery-item">
-            <img src="img/photo-sunset-mobile@1x.jpg" alt="Дорога на Седону" class="gallery-item__img" width="280" height="280">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+              <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Дорога на Седону" class="gallery-item__img" width="280" height="280">
+            </picture>
             <div class="gallery-item__content">
               <div class="gallery-item__content-column">
                 <h2 class="gallery-item__title">Неродные просторы</h2>
@@ -79,7 +87,11 @@
             </div>
           </li>
           <li class="gallery__item gallery-item">
-            <img src="img/photo-cactus-mobile@1x.jpg" alt="Горы и растительность" class="gallery-item__img" width="280" height="280">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+              <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Горы и растительность" class="gallery-item__img" width="280" height="280">
+            </picture>
             <div class="gallery-item__content">
               <div class="gallery-item__content-column">
                 <h2 class="gallery-item__title">Местная растительность</h2>
@@ -100,7 +112,11 @@
             </div>
           </li>
           <li class="gallery__item gallery-item">
-            <img src="img/photo-roads-mobile@1x.jpg" alt="Горный серпантин" class="gallery-item__img" width="280" height="280">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+              <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Горный серпантин" class="gallery-item__img" width="280" height="280">
+            </picture>
             <div class="gallery-item__content">
               <div class="gallery-item__content-column">
                 <h2 class="gallery-item__title">Дорога на север</h2>
@@ -120,7 +136,11 @@
               </button>
           </li>
           <li class="gallery__item gallery-item">
-            <img src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола" class="gallery-item__img" width="280" height="280">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола" class="gallery-item__img" width="280" height="280">
+            </picture>
             <div class="gallery-item__content">
               <div class="gallery-item__content-column">
                 <h2 class="gallery-item__title">Мост Дьявола</h2>
