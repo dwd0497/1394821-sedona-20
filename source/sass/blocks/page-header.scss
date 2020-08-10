@@ -17,11 +17,18 @@
 
 .page-header__logo {
   width: 102px;
-  height: 84px;
 
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+
+  img {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 187px;
+  }
 }
 
 .page-header__open-btn {

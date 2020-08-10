@@ -15,19 +15,11 @@
 
     .advantages__item-info {
       padding: 36px 10px;
-
-      @media (min-width: $tablet-width) {
-        padding: 42px 30px;
-      }
     }
 
     img {
       display: block;
       height: 260px;
-
-      @media (min-width: $tablet-width) {
-        height: 256px;
-      }
     }
 
     @media (min-width: $tablet-width) {
@@ -35,11 +27,24 @@
       flex-wrap: wrap;
 
       img {
-        width: 66.6664%;
+        width: 512px;
+        height: 256px;
+        object-fit: cover;
       }
 
       .advantages__item-info {
         width: 33.3334%;
+        padding: 42px 30px;
+      }
+
+      &:nth-child(2) .advantages__item-info {
+        order: 1;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      img {
+        width: 800px;
       }
     }
   }
@@ -61,12 +66,6 @@
 
     @media (min-width: $tablet-width) {
       width: 33.3334%;
-    }
-  }
-
-  &:nth-child(2n) img {
-    @media (min-width: $tablet-width) {
-      order: -1;
     }
   }
 
