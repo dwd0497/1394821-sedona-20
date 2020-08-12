@@ -15,7 +15,7 @@
   <div class="container">
     <header class="page-header">
       <div class="page-header__row">
-        <a class="page-header__logo">
+        <a href="index.html" class="page-header__logo">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -166,7 +166,11 @@
         </div>
         <div class="gallery__video gallery-video">
           <div class="gallery-video__preview">
-            <img src="img/video-mobile@1x.jpg" alt="Вступительное видео о городе Седона" width="320" height="201">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Вступительное видео о городе Седона" width="320" height="201">
+            </picture>
           </div>
           <div class="gallery-video__controls">
             <div class="gallery-video__scrollbar">
