@@ -2,6 +2,7 @@
   img {
     display: block;
     width: 100%;
+    object-fit: cover;
 
     @media (min-width: $tablet-width) {
       height: 350px;
