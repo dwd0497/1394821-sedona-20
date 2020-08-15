@@ -90,10 +90,7 @@
     margin-right: 9px;
 
     @media (min-width: $desktop-width) {
-      path {
-        fill: $basic-white;
-      }
-
+      fill: $basic-white;
       opacity: 1;
     }
   }
