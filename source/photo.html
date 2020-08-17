@@ -12,6 +12,32 @@
 </head>
 
 <body class="page-body">
+
+  <svg style="display: none;">
+    <symbol viewBox="0 0 39.4 50" id="icon-html-academy">
+      <path d="M19.9,0h-.2L0,2.1V38.3L19.7,50,39.4,38.3V2.1Zm17,36.8L19.7,47,2.5,36.8V22L19.6,32.2V34L7.9,27v1.8l11.8,7.1v1.9l-11.8-7v1.8l11.8,7,11.9-7.1V24.9l5.3-3.2Zm-.1-17-4.7,2.8-2.2,1.3L19.6,17.8v1.8l8.8,5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8,3.4-1.4.9-4.3-2.6v1.8l2.9,1.7-2.9,1.7L2.6,20l17-10.2Zm.1-1.8L19.6,7.8,2.5,18V4.4L19.7,2.6,36.9,4.4Z" />
+    </symbol>
+
+    <symbol viewBox="0 0 22 20" id="icon-like">
+      <path d="M12.38,3.65l-.63,2.92L11.22,9H19.9v2.06L17,18H8V8l4.37-4.36M2,10v0M13.2,0,6.6,6.6A1.68,1.68,0,0,0,6,8V18a2,2,0,0,0,2,2h9a2,2,0,0,0,1.8-1.2l3-7.1a1.7,1.7,0,0,0,.1-.7V9H22a2,2,0,0,0-2-2H13.7l1-4.6V2.1A2.1,2.1,0,0,0,14.3,1L13.2,0ZM4,8H0V20H4V8ZM22,9V9Z" />
+    </symbol>
+
+    <symbol viewBox="0 0 16 20" id="icon-replay">
+      <path d="M8,4V0L3,5l5,5V6a6,6,0,1,1-6,6H0A8,8,0,1,0,8,4Z" />
+    </symbol>
+
+    <symbol viewBox="0 0 32 20" id="icon-subs">
+      <path d="M29,0H3A3,3,0,0,0,0,3V17a3,3,0,0,0,3,3H29a3,3,0,0,0,3-3V3A3,3,0,0,0,29,0ZM14.4,15.9a9.15,9.15,0,0,1-1.7.1,6.45,6.45,0,0,1-2-.3,4.35,4.35,0,0,1-1.6-1A5.6,5.6,0,0,1,8,12.8,7.89,7.89,0,0,1,7.6,10a8.36,8.36,0,0,1,.5-2.9A5.16,5.16,0,0,1,9.3,5.2a4.25,4.25,0,0,1,1.7-1A9.91,9.91,0,0,1,12.8,4a8.62,8.62,0,0,1,1.7.1,8.11,8.11,0,0,1,1.1.3l-.4,1.9L14.3,6H13a2.7,2.7,0,0,0-2.2,1,4.47,4.47,0,0,0-.8,3,7.77,7.77,0,0,0,.2,1.6,3.1,3.1,0,0,0,.6,1.3,3.92,3.92,0,0,0,1,.8,3.19,3.19,0,0,0,1.4.3,5.28,5.28,0,0,0,1.3-.1,3.55,3.55,0,0,0,.9-.4l.5,1.8A9.38,9.38,0,0,1,14.4,15.9Zm8.7,0a9.15,9.15,0,0,1-1.7.1,6.45,6.45,0,0,1-2-.3,4.35,4.35,0,0,1-1.6-1,4,4,0,0,1-1.1-1.9,7.89,7.89,0,0,1-.4-2.8,8.36,8.36,0,0,1,.5-2.9A5.16,5.16,0,0,1,18,5.2a4.25,4.25,0,0,1,1.7-1A9.91,9.91,0,0,1,21.5,4a8.62,8.62,0,0,1,1.7.1,8.11,8.11,0,0,1,1.1.3l-.4,1.9L23,6H21.7a2.7,2.7,0,0,0-2.2,1,4.47,4.47,0,0,0-.8,3,7.77,7.77,0,0,0,.2,1.6,3.1,3.1,0,0,0,.6,1.3,3.92,3.92,0,0,0,1,.8,3.19,3.19,0,0,0,1.4.3,5.28,5.28,0,0,0,1.3-.1,3.55,3.55,0,0,0,.9-.4l.5,1.8A9.38,9.38,0,0,1,23.1,15.9Z" />
+    </symbol>
+
+    <symbol viewBox="0 0 20 20" id="icon-fullscreen">
+      <path d="M0,0V6H3V3H6V0H0Z" />
+      <path d="M3,14H0v6H6V17H3Z" />
+      <path d="M17,0H14V3h3V6h3V0Z" />
+      <path d="M17,17H14v3h6V14H17Z" />
+    </symbol>
+  </svg>
+
   <div class="container">
     <header class="page-header">
       <div class="page-header__row">
@@ -63,6 +89,9 @@
         <ul class="gallery__list">
           <li class="gallery__item gallery__item--first gallery-item">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
               <img src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Дорога на Седону" class="gallery-item__img" width="280" height="280">
@@ -73,14 +102,8 @@
                 <p class="gallery-item__author">Автор фото: Борис</p>
               </div>
               <button class="gallery-item__like-btn" type="button" aria-label="Поставить лайк">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                  <g id="Page-1">
-                    <g id="Core" transform="translate(-295.000000, -464.000000)">
-                      <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                        <path id="Shape" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z" />
-                      </g>
-                    </g>
-                  </g>
+                <svg width="22" height="20">
+                  <use xlink:href="#icon-like"></use>
                 </svg>
                 1350
               </button>
@@ -88,6 +111,9 @@
           </li>
           <li class="gallery__item gallery-item">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
               <img src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Горы и растительность" class="gallery-item__img" width="280" height="280">
@@ -98,14 +124,8 @@
                 <p class="gallery-item__author">Автор фото: Сергей</p>
               </div>
               <button class="gallery-item__like-btn" type="button" aria-label="Поставить лайк">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                  <g id="Page-1">
-                    <g id="Core" transform="translate(-295.000000, -464.000000)">
-                      <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                        <path id="Shape" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z" />
-                      </g>
-                    </g>
-                  </g>
+                <svg width="22" height="20">
+                  <use xlink:href="#icon-like"></use>
                 </svg>
                 143
               </button>
@@ -113,6 +133,9 @@
           </li>
           <li class="gallery__item gallery-item">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
               <img src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Горный серпантин" class="gallery-item__img" width="280" height="280">
@@ -123,20 +146,18 @@
                 <p class="gallery-item__author">Автор фото: Петр</p>
               </div>
               <button class="gallery-item__like-btn" type="button" aria-label="Поставить лайк">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                  <g id="Page-1">
-                    <g id="Core" transform="translate(-295.000000, -464.000000)">
-                      <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                        <path id="Shape" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z" />
-                      </g>
-                    </g>
-                  </g>
+                <svg width="22" height="20">
+                  <use xlink:href="#icon-like"></use>
                 </svg>
                 96
               </button>
+            </div>
           </li>
           <li class="gallery__item gallery-item">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
               <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост дьявола" class="gallery-item__img" width="280" height="280">
@@ -147,17 +168,12 @@
                 <p class="gallery-item__author">Автор фото: Антон</p>
               </div>
               <button class="gallery-item__like-btn" type="button" aria-label="Поставить лайк">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20" enable-background="new 0 0 22 20" xml:space="preserve">
-                  <g id="Page-1">
-                    <g id="Core" transform="translate(-295.000000, -464.000000)">
-                      <g id="thumb-up" transform="translate(295.000000, 464.000000)">
-                        <path id="Shape" d="M12.383,3.646l-0.637,2.929L11.219,9H13.7h6.2v2c0,0.018,0,0.037,0.001,0.058L17,18H8V8.029 l0.014-0.015L12.383,3.646 M2,10v8V10 M13.2,0L6.6,6.6C6.2,6.9,6,7.4,6,8v10c0,1.1,0.9,2,2,2h9c0.8,0,1.5-0.5,1.8-1.2l3-7.1 C21.9,11.5,21.9,11.2,21.9,11V9H22c0-1.1-0.9-2-2-2h-6.3l1-4.6V2.1c0-0.4-0.2-0.8-0.4-1.1L13.2,0L13.2,0z M4,8H0v12h4V8L4,8z M22,9c0,0.033,0,0.044,0,0.044V9L22,9z" />
-                      </g>
-                    </g>
-                  </g>
+                <svg width="22" height="20">
+                  <use xlink:href="#icon-like"></use>
                 </svg>
                 254
               </button>
+            </div>
           </li>
         </ul>
         <div class="lead">
@@ -179,25 +195,23 @@
             </div>
             <div class="gallery-video__control-btns">
               <button class="gallery-video__btn gallery-video__btn--repeat">
-                <svg width="16" height="20" viewBox="0 0 16 20" fill="#5C6870" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8 4V0L3 5L8 10V6C11.3 6 14 8.7 14 12C14 15.3 11.3 18 8 18C4.7 18 2 15.3 2 12H0C0 16.4 3.6 20 8 20C12.4 20 16 16.4 16 12C16 7.6 12.4 4 8 4Z" />
+                <svg viewBox="0 0 16 20" width="16" height="20">
+                  <use xlink:href="#icon-replay"></use>
                 </svg>
               </button>
               <button class="gallery-video__btn gallery-video__btn--subs">
-                <svg width="32" height="20" viewBox="0 0 32 20" fill="#5C6870" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M29 0H3C1.3 0 0 1.3 0 3V17C0 18.7 1.3 20 3 20H29C30.7 20 32 18.7 32 17V3C32 1.3 30.7 0 29 0ZM14.4 15.9C13.9 16 13.3 16 12.7 16C12 16 11.3 15.9 10.7 15.7C10.1 15.5 9.5 15.1 9.1 14.7C8.7 14.3 8.3 13.6 8 12.8C7.7 12 7.6 11.1 7.6 10C7.6 8.9 7.8 7.9 8.1 7.1C8.4 6.3 8.8 5.7 9.3 5.2C9.8 4.7 10.4 4.4 11 4.2C11.5 4.1 12.2 4 12.8 4C13.5 4 14 4 14.5 4.1C15 4.2 15.3 4.3 15.6 4.4L15.2 6.3C14.9 6.2 14.6 6.1 14.3 6C13.9 6 13.5 6 13 6C12.1 6 11.4 6.3 10.8 7C10.2 7.7 10 8.7 10 10C10 10.6 10.1 11.1 10.2 11.6C10.3 12.1 10.5 12.5 10.8 12.9C11.1 13.2 11.4 13.5 11.8 13.7C12.2 13.9 12.7 14 13.2 14C13.7 14 14.1 14 14.5 13.9C14.8 13.8 15.1 13.7 15.4 13.5L15.9 15.3C15.4 15.6 14.9 15.7 14.4 15.9ZM23.1 15.9C22.6 16 22 16 21.4 16C20.7 16 20 15.9 19.4 15.7C18.8 15.5 18.2 15.1 17.8 14.7C17.3 14.2 16.9 13.6 16.7 12.8C16.4 12 16.3 11.1 16.3 10C16.3 8.9 16.5 7.9 16.8 7.1C17.1 6.3 17.5 5.7 18 5.2C18.5 4.7 19.1 4.4 19.7 4.2C20.2 4.1 20.9 4 21.5 4C22.2 4 22.7 4 23.2 4.1C23.7 4.2 24 4.3 24.3 4.4L23.9 6.3C23.6 6.2 23.3 6.1 23 6C22.6 6 22.2 6 21.7 6C20.8 6 20.1 6.3 19.5 7C18.9 7.7 18.7 8.7 18.7 10C18.7 10.6 18.8 11.1 18.9 11.6C19 12.1 19.2 12.5 19.5 12.9C19.8 13.2 20.1 13.5 20.5 13.7C20.9 13.9 21.4 14 21.9 14C22.4 14 22.8 14 23.2 13.9C23.5 13.8 23.8 13.7 24.1 13.5L24.6 15.3C24.1 15.6 23.6 15.7 23.1 15.9Z" />
+                <svg width="32" height="20">
+                  <use xlink:href="#icon-subs"></use>
                 </svg>
               </button>
               <button class="gallery-video__btn gallery-video__btn--fullscreen">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="#5C6870" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0V3V6H3V3H6V0H3H0Z" />
-                  <path d="M3 14H0V17V20H3H6V17H3V14Z" />
-                  <path d="M17 0H14V3H17V6H20V3V0H17Z" />
-                  <path d="M17 17H14V20H17H20V17V14H17V17Z" />
+                <svg width="20" height="20">
+                  <use xlink:href="#icon-fullscreen"></use>
                 </svg>
               </button>
             </div>
           </div>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -212,8 +226,8 @@
       <p class="page-footer__copyright">
         Разработано
         <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link">
-          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-            <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z" />
+          <svg width="27" height="34">
+            <use xlink:href="#icon-html-academy"></use>
           </svg>
         </a>
       </p>
