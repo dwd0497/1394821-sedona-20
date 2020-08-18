@@ -87,7 +87,8 @@ exports.server = server;
 
 const copy = () => {
   return gulp.src([
-    "source/fonts/*{woff, woff2}",
+    "source/css/normalize.css",
+    "source/fonts/*{woff,woff2}",
     "source/img/**",
     "source/js/**",
     "source/*.ico",
