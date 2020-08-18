@@ -110,7 +110,6 @@ const copy = () => {
     "source/fonts/*{woff,woff2}",
     "source/img/**",
     "source/*.ico",
-    "source/*.html"
   ], {
     base: "source"
   })
@@ -118,6 +117,18 @@ const copy = () => {
 };
 
 exports.copy = copy;
+
+// Copy html
+
+const html = () => {
+  return gulp.src(["source/**/*.html"],
+    {
+      base: "source"
+    })
+    .pipe(gulp.dest("build"));
+};
+
+exports.html = html;
 
 // Clean
 
@@ -131,14 +142,14 @@ exports.clean = clean;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(clean, styles, copy));
-  gulp.watch("source/*.html").on("change", gulp.series(copy, sync.reload));
+  gulp.watch("source/*.html").on("change", gulp.series(html, sync.reload));
   gulp.watch(["source/js/**/*.js", "!source/js/**/*min.js"], gulp.series(scripts));
 };
 
 // Build
 
 const build = (done) => {
-  gulp.series(clean, gulp.parallel(copy, styles, scripts), gulp.parallel(images, sprite), webp)(done);
+  gulp.series(clean, gulp.parallel(copy, html, styles, scripts), gulp.parallel(images, sprite), webp)(done);
 };
 
 exports.build = build;
