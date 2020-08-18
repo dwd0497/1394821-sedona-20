@@ -35,13 +35,13 @@ exports.styles = styles;
 // Images
 
 const images = () => {
-  return gulp.src("source/img/**/*{jpg,png,svg}")
+  return gulp.src(["build/img/**/*{jpg,png,svg}", "!build/img/**/sprite.svg"])
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.mozjpeg({ progressive: true }),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest('source/img'))
+    .pipe(gulp.dest('build/img'))
 };
 
 exports.images = images;
@@ -122,5 +122,5 @@ exports.default = gulp.series(
 // Build
 
 exports.build = gulp.series(
-  clean, styles, images, sprite, webp, copy
+  clean, gulp.parallel(styles, sprite, webp), copy, images
 );
