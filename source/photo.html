@@ -5,38 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <script>
     document.documentElement.classList.remove("no-js");
   </script>
 </head>
 
 <body class="page-body">
-
-  <svg style="display: none;">
-    <symbol viewBox="0 0 39.4 50" id="icon-html-academy">
-      <path d="M19.9,0h-.2L0,2.1V38.3L19.7,50,39.4,38.3V2.1Zm17,36.8L19.7,47,2.5,36.8V22L19.6,32.2V34L7.9,27v1.8l11.8,7.1v1.9l-11.8-7v1.8l11.8,7,11.9-7.1V24.9l5.3-3.2Zm-.1-17-4.7,2.8-2.2,1.3L19.6,17.8v1.8l8.8,5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8,3.4-1.4.9-4.3-2.6v1.8l2.9,1.7-2.9,1.7L2.6,20l17-10.2Zm.1-1.8L19.6,7.8,2.5,18V4.4L19.7,2.6,36.9,4.4Z" />
-    </symbol>
-
-    <symbol viewBox="0 0 22 20" id="icon-like">
-      <path d="M12.38,3.65l-.63,2.92L11.22,9H19.9v2.06L17,18H8V8l4.37-4.36M2,10v0M13.2,0,6.6,6.6A1.68,1.68,0,0,0,6,8V18a2,2,0,0,0,2,2h9a2,2,0,0,0,1.8-1.2l3-7.1a1.7,1.7,0,0,0,.1-.7V9H22a2,2,0,0,0-2-2H13.7l1-4.6V2.1A2.1,2.1,0,0,0,14.3,1L13.2,0ZM4,8H0V20H4V8ZM22,9V9Z" />
-    </symbol>
-
-    <symbol viewBox="0 0 16 20" id="icon-replay">
-      <path d="M8,4V0L3,5l5,5V6a6,6,0,1,1-6,6H0A8,8,0,1,0,8,4Z" />
-    </symbol>
-
-    <symbol viewBox="0 0 32 20" id="icon-subs">
-      <path d="M29,0H3A3,3,0,0,0,0,3V17a3,3,0,0,0,3,3H29a3,3,0,0,0,3-3V3A3,3,0,0,0,29,0ZM14.4,15.9a9.15,9.15,0,0,1-1.7.1,6.45,6.45,0,0,1-2-.3,4.35,4.35,0,0,1-1.6-1A5.6,5.6,0,0,1,8,12.8,7.89,7.89,0,0,1,7.6,10a8.36,8.36,0,0,1,.5-2.9A5.16,5.16,0,0,1,9.3,5.2a4.25,4.25,0,0,1,1.7-1A9.91,9.91,0,0,1,12.8,4a8.62,8.62,0,0,1,1.7.1,8.11,8.11,0,0,1,1.1.3l-.4,1.9L14.3,6H13a2.7,2.7,0,0,0-2.2,1,4.47,4.47,0,0,0-.8,3,7.77,7.77,0,0,0,.2,1.6,3.1,3.1,0,0,0,.6,1.3,3.92,3.92,0,0,0,1,.8,3.19,3.19,0,0,0,1.4.3,5.28,5.28,0,0,0,1.3-.1,3.55,3.55,0,0,0,.9-.4l.5,1.8A9.38,9.38,0,0,1,14.4,15.9Zm8.7,0a9.15,9.15,0,0,1-1.7.1,6.45,6.45,0,0,1-2-.3,4.35,4.35,0,0,1-1.6-1,4,4,0,0,1-1.1-1.9,7.89,7.89,0,0,1-.4-2.8,8.36,8.36,0,0,1,.5-2.9A5.16,5.16,0,0,1,18,5.2a4.25,4.25,0,0,1,1.7-1A9.91,9.91,0,0,1,21.5,4a8.62,8.62,0,0,1,1.7.1,8.11,8.11,0,0,1,1.1.3l-.4,1.9L23,6H21.7a2.7,2.7,0,0,0-2.2,1,4.47,4.47,0,0,0-.8,3,7.77,7.77,0,0,0,.2,1.6,3.1,3.1,0,0,0,.6,1.3,3.92,3.92,0,0,0,1,.8,3.19,3.19,0,0,0,1.4.3,5.28,5.28,0,0,0,1.3-.1,3.55,3.55,0,0,0,.9-.4l.5,1.8A9.38,9.38,0,0,1,23.1,15.9Z" />
-    </symbol>
-
-    <symbol viewBox="0 0 20 20" id="icon-fullscreen">
-      <path d="M0,0V6H3V3H6V0H0Z" />
-      <path d="M3,14H0v6H6V17H3Z" />
-      <path d="M17,0H14V3h3V6h3V0Z" />
-      <path d="M17,17H14v3h6V14H17Z" />
-    </symbol>
-  </svg>
 
   <div class="container">
     <header class="page-header">
@@ -103,7 +78,7 @@
               </div>
               <button class="gallery-item__like-btn" type="button" aria-label="Поставить лайк">
                 <svg width="22" height="20">
-                  <use xlink:href="#icon-like"></use>
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>
                 1350
               </button>
@@ -125,7 +100,7 @@
               </div>
               <button class="gallery-item__like-btn" type="button" aria-label="Поставить лайк">
                 <svg width="22" height="20">
-                  <use xlink:href="#icon-like"></use>
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>
                 143
               </button>
@@ -147,7 +122,7 @@
               </div>
               <button class="gallery-item__like-btn" type="button" aria-label="Поставить лайк">
                 <svg width="22" height="20">
-                  <use xlink:href="#icon-like"></use>
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>
                 96
               </button>
@@ -169,7 +144,7 @@
               </div>
               <button class="gallery-item__like-btn" type="button" aria-label="Поставить лайк">
                 <svg width="22" height="20">
-                  <use xlink:href="#icon-like"></use>
+                  <use xlink:href="img/sprite.svg#icon-like"></use>
                 </svg>
                 254
               </button>
@@ -196,17 +171,17 @@
             <div class="gallery-video__control-btns">
               <button class="gallery-video__btn gallery-video__btn--repeat">
                 <svg viewBox="0 0 16 20" width="16" height="20">
-                  <use xlink:href="#icon-replay"></use>
+                  <use xlink:href="img/sprite.svg#icon-replay"></use>
                 </svg>
               </button>
               <button class="gallery-video__btn gallery-video__btn--subs">
                 <svg width="32" height="20">
-                  <use xlink:href="#icon-subs"></use>
+                  <use xlink:href="img/sprite.svg#icon-subs"></use>
                 </svg>
               </button>
               <button class="gallery-video__btn gallery-video__btn--fullscreen">
                 <svg width="20" height="20">
-                  <use xlink:href="#icon-fullscreen"></use>
+                  <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
                 </svg>
               </button>
             </div>
@@ -227,7 +202,7 @@
         Разработано
         <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link">
           <svg width="27" height="34">
-            <use xlink:href="#icon-html-academy"></use>
+            <use xlink:href="img/sprite.svg#sicon-html-academy"></use>
           </svg>
         </a>
       </p>

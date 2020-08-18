@@ -85,6 +85,8 @@
   svg {
     display: block;
 
+    fill: $controls-color;
+
     &:hover,
     &:focus-within {
       fill: $light-black;
