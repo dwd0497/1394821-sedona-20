@@ -17,8 +17,11 @@ const uglify = require("gulp-uglify-es").default;
 
 const scripts = () => {
   return gulp.src("source/js/script.js")
+    .pipe(plumber())
     .pipe(uglify())
-    .pipe(rename("script.min.js"))
+    .pipe(rename(function (path) {
+      path.basename += ".min";
+    }))
     .pipe(gulp.dest("build/js"))
 };
 
@@ -35,7 +38,9 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(csso())
-    .pipe(rename("style.min.css"))
+    .pipe(rename(function (path) {
+      path.basename += ".min";
+    }))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -141,9 +146,9 @@ exports.clean = clean;
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series(clean, styles, copy));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/*.html").on("change", gulp.series(html, sync.reload));
-  gulp.watch(["source/js/**/*.js", "!source/js/**/*min.js"], gulp.series(scripts));
+  gulp.watch("source/js/**/*.js", gulp.series(scripts));
 };
 
 // Build
