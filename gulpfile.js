@@ -51,7 +51,7 @@ exports.styles = styles;
 // Images
 
 const images = () => {
-  return gulp.src(["build/img/**/*{jpg,png,svg}", "!build/img/**/sprite.svg"])
+  return gulp.src(["build/img/**/*{jpg,png,svg}", "!build/img/**/sprite.svg", "!build/img/**/icon-*.svg"])
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.mozjpeg({ progressive: true }),
@@ -76,16 +76,16 @@ exports.webp = webp;
 
 const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
-    .pipe(svgstore())
     .pipe(imagemin([
       imagemin.svgo({
         plugins: [
           {
-            removeAttrs: { attrs: ['fill'] }
+            removeAttrs: { attrs: ["fill", "removeXMLProcInst", "removeDoctype"] }
           }
         ]
       })
     ]))
+    .pipe(svgstore())
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("source/img"))
 };
