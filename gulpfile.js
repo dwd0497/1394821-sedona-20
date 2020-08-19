@@ -19,8 +19,8 @@ const scripts = () => {
   return gulp.src("source/js/script.js")
     .pipe(plumber())
     .pipe(uglify())
-    .pipe(rename(function (path) {
-      path.basename += ".min";
+    .pipe(rename({
+      suffix: '.min'
     }))
     .pipe(gulp.dest("build/js"))
 };
@@ -38,8 +38,8 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(csso())
-    .pipe(rename(function (path) {
-      path.basename += ".min";
+    .pipe(rename({
+      suffix: '.min'
     }))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
@@ -51,7 +51,7 @@ exports.styles = styles;
 // Images
 
 const images = () => {
-  return gulp.src(["build/img/**/*{jpg,png,svg}", "!build/img/**/sprite.svg", "!build/img/**/icon-*.svg"])
+  return gulp.src(["source/img/**/*{jpg,png,svg}", "!source/img/**/icon*.svg"])
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.mozjpeg({ progressive: true }),
@@ -80,14 +80,14 @@ const sprite = () => {
       imagemin.svgo({
         plugins: [
           {
-            removeAttrs: { attrs: ["fill", "removeXMLProcInst", "removeDoctype"] }
+            removeAttrs: { attrs: ["fill"] }
           }
         ]
       })
     ]))
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"))
+    .pipe(gulp.dest("build/img"))
 };
 
 exports.sprite = sprite;
@@ -113,7 +113,6 @@ exports.server = server;
 const copy = () => {
   return gulp.src([
     "source/fonts/*{woff,woff2}",
-    "source/img/**",
     "source/*.ico",
   ], {
     base: "source"
@@ -153,11 +152,7 @@ const watcher = () => {
 
 // Build
 
-const build = (done) => {
-  gulp.series(clean, gulp.parallel(copy, html, styles, scripts), gulp.parallel(images, sprite), webp)(done);
-};
-
-exports.build = build;
+exports.build = gulp.series(clean, gulp.parallel(copy, html, styles, scripts), gulp.parallel(images, sprite), webp);
 
 exports.default = gulp.series(
   build, gulp.parallel(server, watcher)

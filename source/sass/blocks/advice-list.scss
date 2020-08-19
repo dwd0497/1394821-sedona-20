@@ -39,7 +39,7 @@
   }
 
   &--housing {
-    background-image: url("../img/icon-house.svg");
+    background-image: url("../img/house.svg");
     background-size: 39px 37px;
 
     @media (min-width: $tablet-width) {
@@ -48,7 +48,7 @@
   }
 
   &--gifts {
-    background-image: url("../img/icon-gift.svg");
+    background-image: url("../img/gift.svg");
     background-size: 32px 38px;
 
     @media (min-width: $tablet-width) {
@@ -57,7 +57,7 @@
   }
 
   &--food {
-    background-image: url("../img/icon-burger.svg");
+    background-image: url("../img/burger.svg");
     background-size: 40px 35px;
 
     @media (min-width: $tablet-width) {
