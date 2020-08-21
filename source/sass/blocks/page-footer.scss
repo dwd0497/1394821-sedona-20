@@ -1,21 +1,24 @@
 .page-footer {
-  padding-top: 38px;
-  padding-bottom: 23px;
+  padding: 38px 0 23px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
 
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding: 38px 0 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 38px 0 36px;
+    margin: 0 -25px;
   }
 }
 
 .page-footer__hashtag {
   @include font-set (21px, 26px, bold);
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -23,7 +26,7 @@
 }
 
 .page-footer__social-list {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

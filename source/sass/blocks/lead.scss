@@ -2,7 +2,7 @@
   width: 85%;
 
   margin: 0 auto;
-  padding: 32px 0;
+  padding: 33px 0 28px;
 
   br {
     display: none;
@@ -10,7 +10,8 @@
 
   @media (min-width: $tablet-width) {
     width: 75%;
-    margin: 43px auto 52px;
+    margin: 58px auto 39px;
+    padding: 0;
 
     br {
       display: block;
@@ -19,18 +20,51 @@
 
   @media (min-width: $desktop-width) {
     width: 50%;
-    margin: 55px auto 41px;
+    margin: 56px auto 44px;
+  }
+
+  &--sedona {
+    padding-bottom: 13px;
+
+    .lead__title {
+      margin-bottom: 32px;
+    }
+
+    .lead__text {
+      line-height: 24px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin: 45px auto 41px;
+
+      .lead__title {
+        font-size: 21px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 56px auto 33px;
+    }
   }
 }
 
 .lead__title {
   @include font-set (18px, 26px, bold);
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 21px;
+
+  &--large {
+    font-size: 21px;
+  }
+
+  @media (min-width: $tablet-width) {
+    @include font-set (30px, 26px, bold);
+    margin-bottom: 32px;
+  }
 }
 
 .lead__text {
-  @include font-set (inherit, 26px);
+  @include font-set (inherit, 24px);
   margin: 0;
 
   margin-bottom: 30px;

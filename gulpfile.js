@@ -13,7 +13,7 @@ const svgstore = require("gulp-svgstore");
 const del = require("del");
 const uglify = require("gulp-uglify-es").default;
 
-//Scripts
+// Prepare a file with scripts
 
 const scripts = () => {
   return gulp.src("source/js/script.js")
@@ -27,7 +27,7 @@ const scripts = () => {
 
 exports.scripts = scripts;
 
-// Styles
+// Prepare a file with styles
 
 const styles = () => {
   return gulp.src("source/sass/style.scss")
@@ -48,7 +48,7 @@ const styles = () => {
 
 exports.styles = styles;
 
-// Images
+// Optimize images
 
 const images = () => {
   return gulp.src(["source/img/**/*{jpg,png,svg}", "!source/img/**/icon*.svg"])
@@ -62,7 +62,7 @@ const images = () => {
 
 exports.images = images;
 
-// WebP
+// Create WebP images
 
 const webp = () => {
   return gulp.src("build/img/**/*{jpg,png}")
@@ -72,7 +72,7 @@ const webp = () => {
 
 exports.webp = webp;
 
-// Sprite
+// Create sprite.svg
 
 const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
@@ -134,7 +134,7 @@ const html = () => {
 
 exports.html = html;
 
-// Clean
+// Clean folder build
 
 const clean = () => {
   return del("build");
@@ -142,7 +142,7 @@ const clean = () => {
 
 exports.clean = clean;
 
-// Watcher
+// Watch for files
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
@@ -150,7 +150,7 @@ const watcher = () => {
   gulp.watch("source/js/**/*.js", gulp.series(scripts));
 };
 
-// Build
+// Build a project
 
 const build = gulp.series(
   clean,
@@ -159,6 +159,8 @@ const build = gulp.series(
   webp)
 
 exports.build = build;
+
+// Start developing
 
 exports.default = gulp.series(
   build,

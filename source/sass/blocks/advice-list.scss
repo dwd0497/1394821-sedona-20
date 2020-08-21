@@ -6,19 +6,23 @@
 
   background-color: $basic-white;
 
-  padding: 26px 20px;
+  padding: 26px 20px 35px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     padding: 60px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 57px 0 80px;
+  }
 }
 
 .advice-list__item {
-  padding-left: 52px;
-  margin-bottom: 26px;
+  padding-top: 8px;
+  padding-left: 49px;
 
-  padding-top: 10px;
+  margin-bottom: 18px;
 
   &:last-child {
     margin-bottom: 0;
@@ -28,7 +32,7 @@
   background-position: top left;
 
   @media (min-width: $tablet-width) {
-    padding: 95px 32px 0;
+    padding: 98px 32px 0;
     margin-bottom: 0;
 
     width: 33.3334%;
@@ -36,6 +40,9 @@
     text-align: center;
 
     background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   &--housing {
@@ -52,7 +59,8 @@
     background-size: 32px 38px;
 
     @media (min-width: $tablet-width) {
-      background-size: 76px 68px;
+      background-size: 64px 75px;
+      order: 2;
     }
   }
 
@@ -61,19 +69,22 @@
     background-size: 40px 35px;
 
     @media (min-width: $tablet-width) {
-      background-size: 64px 75px;
+      background-size: 76px 68px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 98px 50px 0;
   }
 }
 
 .advice-list__title {
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 0 16px;
 
   @include font-set (18px, 26px, bold);
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 26px;
+    margin-bottom: 23px;
 
     @include font-set (21px, 26px, bold);
   }
@@ -81,4 +92,24 @@
 
 .advice-list__description {
   margin: 0;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    br {
+      display: none
+    }
+
+    .desktop_br {
+      display: block;
+    }
+  }
 }

@@ -14,7 +14,15 @@
     background-color: $primary-color;
 
     .advantages__item-info {
-      padding: 36px 10px;
+      padding: 38px 10px;
+
+      &--first {
+        background-image: url("../img/bg-triangle.svg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        padding-top: 70px;
+        padding: 70px 10px 40px;
+      }
     }
 
     img {
@@ -35,6 +43,10 @@
       .advantages__item-info {
         width: 33.3334%;
         padding: 42px 30px;
+
+        &--first {
+          background-image: none;
+        }
       }
 
       &:nth-child(2) .advantages__item-info {
@@ -45,6 +57,10 @@
     @media (min-width: $desktop-width) {
       img {
         width: 800px;
+      }
+
+      .advantages__item-info {
+        padding: 48px 30px;
       }
     }
   }
@@ -62,6 +78,12 @@
 
         padding: 42px 15px;
       }
+
+      @media (min-width: $desktop-width) {
+        border-bottom: none;
+
+        padding: 42px 15px 64px;
+      }
     }
 
     @media (min-width: $tablet-width) {
@@ -75,17 +97,15 @@
 }
 
 .advantages__item-title {
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0 0 16px;
 
   @include font-set(18px, 26px, bold);
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
+    margin: 0 auto 24px;
+    max-width: 151px;
 
     @include font-set (21px, 26px, bold);
-
-    padding: 0 22px;
   }
 
   &::after {
@@ -101,4 +121,30 @@
 
 .advantages__item-description {
   margin: 0;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    max-width: 200px;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 290px;
+
+    br {
+      display: none;
+    }
+
+    .desktop_br {
+      display: block;
+    }
+  }
 }
