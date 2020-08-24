@@ -24,7 +24,7 @@
   }
 
   &--top {
-    margin: 37px auto 20px;
+
 
     @media (min-width: $tablet-width) {
       margin: 58px auto 39px;
@@ -38,6 +38,10 @@
 
   &--sedona {
     padding-bottom: 13px;
+
+    .lead__title {
+      margin-bottom: 33px;
+    }
 
     .lead__text {
       line-height: 24px;
@@ -57,6 +61,13 @@
   }
 
   &--feedback {
+    padding: 37px 0 18px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      width: 58%;
+    }
+
     @media (min-width: $desktop-width) {
       margin: 112px auto 8px;
       width: 37%;

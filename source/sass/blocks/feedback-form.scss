@@ -36,7 +36,7 @@
 
   border-bottom: 1px solid $dark-gray;
 
-  padding: 20px 20px 24px;
+  padding: 23px 20px 21px;
 
   &:last-of-type {
     border-bottom: none;
@@ -177,7 +177,7 @@
     .feedback-form__item {
       text-align: left;
 
-      margin-bottom: 62px;
+      margin-bottom: 54px;
 
       &:first-child {
         margin-top: 11px;
@@ -252,9 +252,11 @@
     &--user {
       text-align: left;
       margin-bottom: 56px;
-      padding-left: 30px;
+      padding-left: 39px;
+      flex-grow: 0;
 
-      width: 30%;
+      width: 50%;
+      border-left: 1px solid $dividing-line;
     }
 
     &--contacts {
@@ -304,6 +306,7 @@
       order: -1;
 
       text-align: left;
+      width: 49%;
     }
 
     &--places {
@@ -346,6 +349,7 @@
 
       .feedback-form__item {
         width: 45%;
+        margin-bottom: 63px;
 
         &:first-child {
           margin-top: 0;

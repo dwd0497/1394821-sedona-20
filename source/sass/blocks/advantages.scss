@@ -133,6 +133,10 @@
     br {
       display: block;
     }
+
+    .desktop_br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {

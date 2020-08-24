@@ -98,7 +98,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    br {
+    br:not(.desktop_br) {
       display: block;
     }
   }
