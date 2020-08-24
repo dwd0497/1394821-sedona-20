@@ -1,9 +1,10 @@
 .gallery {
-  margin-bottom: 115px;
+  margin-bottom: 109px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 60px;
-    margin-bottom: 40px;
+    padding: 42px 60px 39px;
+
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,5 +50,11 @@
         height: 400px;
       }
     }
+  }
+}
+
+.gallery__video {
+  @media (min-width: $tablet-width) {
+    padding-top: 42px;
   }
 }

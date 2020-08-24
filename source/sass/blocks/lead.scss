@@ -1,5 +1,5 @@
 .lead {
-  width: 85%;
+  width: 86%;
 
   margin: 0 auto;
   padding: 33px 0 28px;
@@ -20,15 +20,24 @@
 
   @media (min-width: $desktop-width) {
     width: 50%;
-    margin: 56px auto 44px;
+    margin: 60px auto 37px;
+  }
+
+  &--top {
+    margin: 37px auto 20px;
+
+    @media (min-width: $tablet-width) {
+      margin: 58px auto 39px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 50%;
+      margin: 100px auto 78px;
+    }
   }
 
   &--sedona {
     padding-bottom: 13px;
-
-    .lead__title {
-      margin-bottom: 32px;
-    }
 
     .lead__text {
       line-height: 24px;
@@ -43,7 +52,14 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin: 56px auto 33px;
+      margin: 56px auto 30px;
+    }
+  }
+
+  &--feedback {
+    @media (min-width: $desktop-width) {
+      margin: 112px auto 8px;
+      width: 37%;
     }
   }
 }
@@ -51,15 +67,16 @@
 .lead__title {
   @include font-set (18px, 26px, bold);
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 27px;
 
   &--large {
     font-size: 21px;
+    margin-bottom: 21px;
   }
 
   @media (min-width: $tablet-width) {
     @include font-set (30px, 26px, bold);
-    margin-bottom: 32px;
+    margin-bottom: 34px;
   }
 }
 

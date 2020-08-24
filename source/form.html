@@ -50,11 +50,11 @@
         <button class="main-nav__close-btn" type="button" aria-label="Закрыть меню"></button>
       </nav>
       <div class="promo">
-        <img src="img/text-sedona.svg" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="282" height="214">
+        <img class="promo__img" src="img/text-sedona.svg" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!" width="229" height="39">
       </div>
     </header>
     <main class="page-main">
-      <div class="lead">
+      <div class="lead lead--top lead--feedback">
         <h1 class="lead__title">Оставьте свой отзыв</h1>
         <p class="lead__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
@@ -89,7 +89,7 @@
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
                 <label for="user-tel">
-                  Контактный телефон<sup>*</sup>:
+                  <span class="feedback-form__item-span">Контактный</span> телефон<sup>*</sup>:
                 </label>
                 <input type="tel" name="user-tel" id="user-tel" placeholder="Введите телефон" required>
               </li>
@@ -144,7 +144,7 @@
             <textarea name="feedback-form-message" class="feedback-form__message" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="btn feedback-form__submit-btn" type="submit">Отправить отзыв</button>
-          <span><sup>*</sup> — обязательные поля</span>
+          <span class="feedback-form__required"><sup>*</sup> — обязательные поля</span>
         </form>
       </section>
     </main>

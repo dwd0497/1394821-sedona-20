@@ -1,5 +1,5 @@
 .gallery-item {
-  padding: 20px 20px 0;
+  padding: 24px 20px 0;
   border-bottom: 1px solid $normal-gray;
 
   &:first-child {
@@ -24,26 +24,31 @@
 .gallery-item__content {
   text-align: left;
 
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0 15px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding-bottom: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 15px 20px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
-    margin-top: -75px;
+    margin-top: -79px;
 
     background-color: rgba($color: $basic-black, $alpha: 0.3);
 
     color: $basic-white;
+  }
+}
+
+.gallery-item__content-column {
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }
 
@@ -81,13 +86,19 @@
 
   display: flex;
 
+  min-width: 65px;
+
   @media (min-width: $desktop-width) {
     color: $basic-white;
   }
 
   svg {
     opacity: 0.3;
-    margin-right: 9px;
+    margin-right: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 11px;
+    }
 
     @media (min-width: $desktop-width) {
       fill: $basic-white;
