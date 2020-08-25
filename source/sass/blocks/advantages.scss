@@ -8,6 +8,7 @@
 
 .advantages__item {
   width: 100%;
+  background-color: $secondary-color;
 
   &--main {
     color: $basic-white;
@@ -20,7 +21,6 @@
         background-image: url("../img/bg-triangle.svg");
         background-repeat: no-repeat;
         background-position: center top;
-        padding-top: 70px;
         padding: 70px 10px 40px;
       }
     }
@@ -66,8 +66,6 @@
   }
 
   &--secondary {
-    background-color: $secondary-color;
-
     .advantages__item-info {
       padding: 25px 15px;
       margin: 0 20px;

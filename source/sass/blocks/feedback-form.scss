@@ -11,11 +11,9 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     border-top: none;
 
     padding: 0 60px;
-
     margin-bottom: 60px;
 
     .feedback-form__required {
@@ -93,6 +91,17 @@
         padding: 16px 0;
         margin-top: 8px;
         text-indent: 22px;
+        background-repeat: no-repeat;
+        background-position: center right 20px, center right;
+        background-size: 18px 18px, 58px 58px;
+      }
+
+      .feedback-form__input-tel {
+        background-image: url("../img/phone.svg"), linear-gradient($normal-gray, $normal-gray);
+      }
+
+      .feedback-form__input-email {
+        background-image: url("../img/mail.svg"), linear-gradient($normal-gray, $normal-gray);
       }
     }
   }
@@ -116,11 +125,11 @@
       }
     }
 
-    input:checked+.feedback-form__radio-label::after {
+    input:checked + .feedback-form__radio-label::after {
       display: block;
     }
 
-    input:focus+.feedback-form__radio-label::before {
+    input:focus + .feedback-form__radio-label::before {
       outline: 2px solid $outline-color;
     }
   }
@@ -188,11 +197,11 @@
       }
     }
 
-    input:checked+.feedback-form__checkbox-label::after {
+    input:checked + .feedback-form__checkbox-label::after {
       display: block;
     }
 
-    input:focus+.feedback-form__checkbox-label::before {
+    input:focus + .feedback-form__checkbox-label::before {
       outline: 2px solid $outline-color;
     }
   }
@@ -252,10 +261,9 @@
     &--user {
       text-align: left;
       margin-bottom: 56px;
-      padding-left: 39px;
-      flex-grow: 0;
+      padding-left: 45px;
 
-      width: 50%;
+      width: 49%;
       border-left: 1px solid $dividing-line;
     }
 

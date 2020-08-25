@@ -2,7 +2,7 @@
   background-color: #97bad4;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom, bottom;
+  background-position: center bottom -1px, bottom;
   background-size: auto, 280%;
 
   @media (min-resolution: $retina-dppx) {
