@@ -1,0 +1,21 @@
+.popup-error {
+  max-width: 350px;
+  padding: 50px 35px;
+  display: none;
+}
+
+.popup-error__title {
+  @include font-set (30px, 40px, bold);
+  margin: 0 auto 30px;
+  width: 80%;
+}
+
+.popup-error__text {
+  @include font-set (14px, 24px, normal);
+  margin: 0 0 40px;
+}
+
+.popup-error__btn {
+  @include font-set (21px, 26px, bold);
+  padding: 18px 120px 13px;
+}

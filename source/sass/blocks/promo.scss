@@ -2,8 +2,8 @@
   background-color: #97bad4;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom -1px, bottom;
-  background-size: auto, 280%;
+  background-position: center bottom, center bottom;
+  background-size: auto;
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
@@ -27,8 +27,7 @@
   }
 
   &--index {
-
-    background-size: auto;
+    background-position: center bottom, center top;
 
     .promo__img {
       padding-top: 90px;

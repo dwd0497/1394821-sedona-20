@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
@@ -5,12 +11,6 @@ a {
 img {
   max-width: 100%;
   height: auto;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -32,6 +32,10 @@ img {
   background-color: $primary-color;
 
   @include indent-reset;
+
+  text-transform: uppercase;
+
+  font-family: $main-font;
 
   &:hover,
   &:focus-within {

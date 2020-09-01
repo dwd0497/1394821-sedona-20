@@ -11,11 +11,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    padding: 60px 0;
+    padding: 60px 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 57px 0 80px;
+    padding: 57px 0 60px;
   }
 }
 
@@ -33,7 +33,7 @@
   background-position: top left;
 
   @media (min-width: $tablet-width) {
-    padding: 98px 32px 0;
+    padding: 98px 32px 20px;
     margin-bottom: 0;
 
     width: 33.3334%;
@@ -75,7 +75,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 98px 50px 0;
+    padding: 98px 50px 21px;
   }
 }
 
@@ -99,7 +99,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    br:not(.desktop_br) {
+    br:not(.desktop-br) {
       display: block;
     }
   }
@@ -109,7 +109,7 @@
       display: none;
     }
 
-    .desktop_br {
+    .desktop-br {
       display: block;
     }
   }

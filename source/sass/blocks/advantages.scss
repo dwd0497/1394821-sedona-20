@@ -60,7 +60,7 @@
       }
 
       .advantages__item-info {
-        padding: 48px 30px;
+        padding: 50px 30px;
       }
     }
   }
@@ -132,7 +132,7 @@
       display: block;
     }
 
-    .desktop_br {
+    .desktop-br {
       display: none;
     }
   }
@@ -145,7 +145,11 @@
       display: none;
     }
 
-    .desktop_br {
+    .desktop-br {
+      display: block;
+    }
+
+    .tablet-br {
       display: block;
     }
   }

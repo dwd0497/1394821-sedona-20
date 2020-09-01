@@ -1,5 +1,5 @@
 .gallery-item {
-  padding: 24px 20px 0;
+  padding: 24px 20px 1px;
   border-bottom: 1px solid $normal-gray;
 
   &:first-child {
@@ -19,6 +19,10 @@
       height: 267px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
 }
 
 .gallery-item__content {
@@ -35,8 +39,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
-    margin-top: -79px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 
     background-color: rgba($color: $basic-black, $alpha: 0.3);
 

@@ -261,9 +261,9 @@
     &--user {
       text-align: left;
       margin-bottom: 56px;
-      padding-left: 45px;
+      padding-left: 38px;
 
-      width: 49%;
+      width: 50%;
       border-left: 1px solid $dividing-line;
     }
 
@@ -314,7 +314,11 @@
       order: -1;
 
       text-align: left;
-      width: 49%;
+      width: 50%;
+    }
+
+    .feedback-form__radio-label {
+      padding-left: 75px;
     }
 
     &--places {
@@ -351,13 +355,20 @@
       .feedback-form__list {
         display: flex;
         flex-wrap: wrap;
-        padding: 0 100px;
-        justify-content: space-between;
       }
 
+
       .feedback-form__item {
-        width: 45%;
+        width: 50%;
         margin-bottom: 63px;
+
+        &:nth-child(2n+1) {
+          padding-left: 95px;
+        }
+
+        &:nth-child(2n) {
+          padding-left: 32px;
+        }
 
         &:first-child {
           margin-top: 0;
@@ -399,23 +410,25 @@
   }
 
   @media (min-width: $desktop-width) {
-    &--opinion {
-      width: 45%;
-
-      .feedback-form__title {
-        text-align: center;
-      }
+    &--user {
+      padding-left: 79px;
     }
 
-    &--user {
-      width: 45%;
+    &--opinion {
+      padding-left: 2px;
+
+      .feedback-form__title {
+        text-align: left;
+        margin-left: 80px;
+      }
     }
 
     &--contacts {
       .feedback-form__list {
         display: flex;
         justify-content: space-between;
-        margin-top: 43px;
+        margin-top: 44px;
+        flex-wrap: wrap;
       }
 
       .feedback-form__item {
@@ -429,8 +442,8 @@
           margin-right: 16px;
         }
 
-        &:first-child {
-          width: 40%;
+        &:nth-child(2n+1) {
+          width: 42%;
         }
       }
 
@@ -445,11 +458,23 @@
 
         text-align: center;
 
-        &:last-child {
+        &:nth-child(2n+1) {
+          padding: 0;
+        }
+
+        &:nth-child(2n) {
+          padding: 0;
+        }
+
+        &:nth-child(4n) {
           text-align: right;
         }
 
         &:first-child {
+          text-align: left;
+        }
+
+        &:nth-child(4n+1) {
           text-align: left;
         }
       }
