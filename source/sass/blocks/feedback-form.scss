@@ -122,11 +122,11 @@
       }
     }
 
-    input:checked+.feedback-form__radio-label::after {
+    input:checked + .feedback-form__radio-label::after {
       display: block;
     }
 
-    input:focus+.feedback-form__radio-label::before {
+    input:focus + .feedback-form__radio-label::before {
       outline: 2px solid $outline-color;
     }
   }
@@ -194,11 +194,11 @@
       }
     }
 
-    input:checked+.feedback-form__checkbox-label::after {
+    input:checked + .feedback-form__checkbox-label::after {
       display: block;
     }
 
-    input:focus+.feedback-form__checkbox-label::before {
+    input:focus + .feedback-form__checkbox-label::before {
       outline: 2px solid $outline-color;
     }
   }
