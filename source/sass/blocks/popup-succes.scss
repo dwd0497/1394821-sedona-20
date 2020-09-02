@@ -1,7 +1,16 @@
 .popup-succes {
   max-width: 640px;
   padding: 52px 91px 44px;
+  background-color: $basic-white;
+  background-image: linear-gradient($basic-white 60%, $light-gray 60%, $light-gray 100%);
+  z-index: 100;
   display: none;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 7px 15px $box-shadow;
 }
 
 .popup-succes__title {
@@ -12,7 +21,7 @@
 
 .popup-succes__text {
   @include font-set (14px, 24px, normal);
-  margin: 0 auto 40px;
+  margin: 0 auto 80px;
   width: 91%;
 }
 

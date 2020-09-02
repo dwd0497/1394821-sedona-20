@@ -66,6 +66,10 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  .no-js & {
+    display: none;
+  }
 }
 
 .page-header__open-btn--hidden {
