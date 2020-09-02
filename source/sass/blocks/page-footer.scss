@@ -36,6 +36,7 @@
 .page-footer__copyright {
   @include font-set (inherit, 26px);
   margin: 0;
+  margin-right: -9px;
 
   display: flex;
   justify-content: center;

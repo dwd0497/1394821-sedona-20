@@ -1,8 +1,4 @@
 .feedback-form {
-  span {
-    display: none;
-  }
-
   border-top: 1px solid $dark-gray;
 
   margin-bottom: 38px;
@@ -63,6 +59,7 @@
       input {
         flex-grow: 1;
         margin-left: 13px;
+        width: 50px;
 
         padding: 16px 0;
         text-indent: 22px;
@@ -260,8 +257,8 @@
   @media (min-width: $tablet-width) {
     &--user {
       text-align: left;
-      margin-bottom: 56px;
-      padding-left: 38px;
+      margin-bottom: 52px;
+      padding-left: 57px;
 
       width: 50%;
       border-left: 1px solid $dividing-line;
@@ -278,7 +275,7 @@
         top: 30px;
         left: 0;
         position: absolute;
-        width: 25%;
+        width: 19%;
         height: 1px;
         background-color: $dividing-line;
         z-index: 1;
@@ -289,14 +286,14 @@
         top: 30px;
         right: 0;
         position: absolute;
-        width: 25%;
+        width: 19%;
         height: 1px;
         background-color: $dividing-line;
         z-index: 1;
       }
 
       .feedback-form__title {
-        margin-bottom: 20px;
+        margin-bottom: 24px;
       }
 
       .feedback-form__item {
@@ -315,6 +312,10 @@
 
       text-align: left;
       width: 50%;
+
+      .feedback-form__title {
+        margin: 0 0 53px;
+      }
     }
 
     .feedback-form__radio-label {
@@ -331,7 +332,7 @@
         top: 40px;
         left: 0;
         position: absolute;
-        width: 25%;
+        width: 19%;
         height: 1px;
         background-color: $dividing-line;
         z-index: 1;
@@ -342,7 +343,7 @@
         top: 40px;
         right: 0;
         position: absolute;
-        width: 25%;
+        width: 19%;
         height: 1px;
         background-color: $dividing-line;
         z-index: 1;
@@ -390,7 +391,7 @@
         top: 30px;
         left: 0;
         position: absolute;
-        width: 25%;
+        width: 19%;
         height: 1px;
         background-color: $dividing-line;
         z-index: 1;
@@ -401,7 +402,7 @@
         top: 30px;
         right: 0;
         position: absolute;
-        width: 25%;
+        width: 19%;
         height: 1px;
         background-color: $dividing-line;
         z-index: 1;
@@ -495,7 +496,7 @@
 
   @media (min-width: $tablet-width) {
     @include font-set(21px, 26px, bold);
-    margin: 0 0 53px;
+    margin: 0 0 57px;
 
     max-width: 350px;
   }
