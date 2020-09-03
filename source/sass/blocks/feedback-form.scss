@@ -10,7 +10,7 @@
     border-top: none;
 
     padding: 0 60px;
-    margin-bottom: 60px;
+    margin-bottom: 64px;
 
     .feedback-form__required {
       display: block;
@@ -30,7 +30,7 @@
 
   border-bottom: 1px solid $dark-gray;
 
-  padding: 23px 20px 21px;
+  padding: 22px 20px;
 
   &:last-of-type {
     border-bottom: none;
@@ -194,6 +194,10 @@
       }
     }
 
+    .feedback-form__title {
+      padding-top: 17px;
+    }
+
     input:checked + .feedback-form__checkbox-label::after {
       display: block;
     }
@@ -293,7 +297,7 @@
       }
 
       .feedback-form__title {
-        margin-bottom: 24px;
+        margin-bottom: 19px;
       }
 
       .feedback-form__item {
@@ -383,7 +387,7 @@
       position: relative;
 
       .feedback-form__title {
-        margin-bottom: 72px;
+        margin-bottom: 70px;
       }
 
       &::before {
@@ -425,10 +429,15 @@
     }
 
     &--contacts {
+      &::before,
+      &::after {
+        width: 29%;
+      }
+
       .feedback-form__list {
         display: flex;
         justify-content: space-between;
-        margin-top: 44px;
+        margin-top: 48px;
         flex-wrap: wrap;
       }
 
@@ -454,6 +463,11 @@
     }
 
     &--places {
+      &::before,
+      &::after {
+        width: 29%;
+      }
+
       .feedback-form__item {
         width: 25%;
 
@@ -484,6 +498,17 @@
         padding: 0;
       }
     }
+
+    &--comment {
+      &::before,
+      &::after {
+        width: 29%;
+      }
+
+      .feedback-form__title {
+        margin-bottom: 66px;
+      }
+    }
   }
 }
 
@@ -492,11 +517,12 @@
   @include font-set(18px, 26px, bold);
 
   margin: 0 auto;
-  padding-top: 18px;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     @include font-set(21px, 26px, bold);
     margin: 0 0 57px;
+    padding-top: 18px;
 
     max-width: 350px;
   }
@@ -555,7 +581,7 @@
   width: 100%;
 
   background-color: $light-gray;
-  margin: -8px 0 21px;
+  margin: -4px 0 21px;
 }
 
 .feedback-form__submit-btn {

@@ -8,6 +8,7 @@
 
   @media (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
+    background-size: auto, 240%;
   }
 
   @media (min-width: $tablet-width) {
@@ -16,6 +17,8 @@
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
+      background-position: center bottom, center bottom;
+      background-size: auto, 100%;
     }
   }
 
@@ -24,6 +27,7 @@
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@2x.jpg");
+      background-size: auto, 100%;
     }
   }
 

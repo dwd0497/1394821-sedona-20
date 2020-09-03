@@ -80,6 +80,10 @@
     top: 13px;
     padding: 23px 38px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 42px 23px 34px;
+  }
 }
 
 .gallery-video__btn {

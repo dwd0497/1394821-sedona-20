@@ -62,6 +62,10 @@
       .advantages__item-info {
         padding: 50px 30px;
       }
+
+      &:nth-child(2) img {
+        object-position: 0 -17px;
+      }
     }
   }
 
