@@ -1,12 +1,12 @@
 .advice-list {
-  @include list-style;
-
   color: $basic-black;
   text-align: left;
 
+  @include list-style;
+
   background-color: $basic-white;
 
-  padding: 30px 20px 39px;
+  padding: 30px 20px 37px;
 
   @media (min-width: $tablet-width) {
     display: flex;

@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/ptsans.woff" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff" type="font/woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <script>
     document.documentElement.classList.remove("no-js");
@@ -132,10 +136,14 @@
       </section>
       <div class="map">
         <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
           <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
           <img src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="США, Аризона, Седона" width="320" height="350">
         </picture>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad5b793e759e92e2b4e7b6b8fcc6d33033f62be51752f432b94a649c47324c281&amp;source=constructor" width="320" height="350"></iframe>
       </div>
     </main>
     <footer class="page-footer">

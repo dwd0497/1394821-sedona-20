@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/ptsans.woff" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff" type="font/woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <script>
     document.documentElement.classList.remove("no-js");
@@ -68,19 +72,19 @@
                 <label for="user-name">
                   Имя<sup>*</sup>:
                 </label>
-                <input type="text" name="user-name" id="user-name" placeholder="Петр" required>
+                <input class="feedback-form__input" type="text" name="user-name" id="user-name" placeholder="Петр" required>
               </li>
               <li class="feedback-form__item">
                 <label for="user-surname">
                   Фамилия<sup>*</sup>:
                 </label>
-                <input type="text" name="user-surname" id="user-surname" placeholder="Иванов" required>
+                <input class="feedback-form__input" type="text" name="user-surname" id="user-surname" placeholder="Иванов" required>
               </li>
               <li class="feedback-form__item">
                 <label for="user-middle-name">
                   Отчество:
                 </label>
-                <input type="text" name="user-middle-name" id="user-middle-name" placeholder="Александрович">
+                <input class="feedback-form__input" type="text" name="user-middle-name" id="user-middle-name" placeholder="Александрович">
               </li>
             </ul>
           </fieldset>
@@ -88,16 +92,16 @@
             <legend class="feedback-form__title">Контактная информация:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
-                <label for="user-tel">
+                <label class="feedback-form__label" for="user-tel">
                   <span class="feedback-form__item-span">Контактный</span> телефон<sup>*</sup>:
                 </label>
-                <input type="tel" name="user-tel" id="user-tel" class="feedback-form__input-tel" placeholder="Введите телефон" required>
+                <input type="tel" name="user-tel" id="user-tel" class="feedback-form__input feedback-form__input-tel" placeholder="Введите телефон" required>
               </li>
               <li class="feedback-form__item">
-                <label for="user-email">
+                <label class="feedback-form__label" for="user-email">
                   Электронная почта<sup>*</sup>:
                 </label>
-                <input type="email" name="user-email" id="user-email" class="feedback-form__input-email" placeholder="Введите e-mail" required>
+                <input type="email" name="user-email" id="user-email" class="feedback-form__input feedback-form__input-email" placeholder="Введите e-mail" required>
               </li>
             </ul>
           </fieldset>
@@ -105,15 +109,15 @@
             <legend class="feedback-form__title">Ваше общее впечатление:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
-                <input class="visually-hidden" type="radio" value="positiv" name="impression" id="impression-positiv" checked>
+                <input class="feedback-form__input visually-hidden" type="radio" value="positiv" name="impression" id="impression-positiv" checked>
                 <label for="impression-positiv" class="feedback-form__radio-label">Скорее положительное</label>
               </li>
               <li class="feedback-form__item">
-                <input class="visually-hidden" type="radio" value="negative" name="impression" id="impression-negative">
+                <input class="feedback-form__input visually-hidden" type="radio" value="negative" name="impression" id="impression-negative">
                 <label for="impression-negative" class="feedback-form__radio-label">Скорее отрицательное</label>
               </li>
               <li class="feedback-form__item">
-                <input class="visually-hidden" type="radio" value="neutral" name="impression" id="impression-neutral">
+                <input class="feedback-form__input visually-hidden" type="radio" value="neutral" name="impression" id="impression-neutral">
                 <label for="impression-neutral" class="feedback-form__radio-label">Затрудняюсь ответить</label>
               </li>
             </ul>
@@ -122,19 +126,19 @@
             <legend class="feedback-form__title">Посещенные достопримечательности:</legend>
             <ul class="feedback-form__list">
               <li class="feedback-form__item">
-                <input class="visually-hidden" type="checkbox" name="devils-bridge" id="devils-bridge" checked>
+                <input class="feedback-form__input visually-hidden" type="checkbox" name="devils-bridge" id="devils-bridge" checked>
                 <label for="devils-bridge" class="feedback-form__checkbox-label">Мост Дьявола</label>
               </li>
               <li class="feedback-form__item">
-                <input class="visually-hidden" type="checkbox" name="bell-mountain" id="bell-mountain" checked>
+                <input class="feedback-form__input visually-hidden" type="checkbox" name="bell-mountain" id="bell-mountain" checked>
                 <label for="bell-mountain" class="feedback-form__checkbox-label">Гора-Колокол</label>
               </li>
               <li class="feedback-form__item">
-                <input class="visually-hidden" type="checkbox" name="slide-park" id="slide-park" checked>
+                <input class="feedback-form__input visually-hidden" type="checkbox" name="slide-park" id="slide-park" checked>
                 <label for="slide-park" class="feedback-form__checkbox-label">Слайд-парк</label>
               </li>
               <li class="feedback-form__item">
-                <input class="visually-hidden" type="checkbox" name="red-rock" id="red-rock">
+                <input class="feedback-form__input visually-hidden" type="checkbox" name="red-rock" id="red-rock">
                 <label for="red-rock" class="feedback-form__checkbox-label">Красные скалы</label>
               </li>
             </ul>

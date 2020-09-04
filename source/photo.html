@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/ptsans.woff" type="font/woff2" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff" type="font/woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <script>
     document.documentElement.classList.remove("no-js");
@@ -158,33 +162,34 @@
         <div class="gallery__video gallery-video">
           <div class="gallery-video__preview">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
               <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Вступительное видео о городе Седона" width="320" height="201">
             </picture>
           </div>
           <div class="gallery-video__controls">
+            <button class="gallery-video__btn gallery-video__btn--repeat">
+              <svg viewBox="0 0 16 20" width="16" height="20">
+                <use xlink:href="img/sprite.svg#icon-replay"></use>
+              </svg>
+            </button>
             <div class="gallery-video__scrollbar">
               <div class="gallery-video__scale"></div>
               <div class="gallery-video__toggle" tabindex="0"></div>
             </div>
-            <div class="gallery-video__control-btns">
-              <button class="gallery-video__btn gallery-video__btn--repeat">
-                <svg viewBox="0 0 16 20" width="16" height="20">
-                  <use xlink:href="img/sprite.svg#icon-replay"></use>
-                </svg>
-              </button>
-              <button class="gallery-video__btn gallery-video__btn--subs">
-                <svg width="32" height="20">
-                  <use xlink:href="img/sprite.svg#icon-subs"></use>
-                </svg>
-              </button>
-              <button class="gallery-video__btn gallery-video__btn--fullscreen">
-                <svg width="20" height="20">
-                  <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
-                </svg>
-              </button>
-            </div>
+            <button class="gallery-video__btn gallery-video__btn--subs">
+              <svg width="32" height="20">
+                <use xlink:href="img/sprite.svg#icon-subs"></use>
+              </svg>
+            </button>
+            <button class="gallery-video__btn gallery-video__btn--fullscreen">
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>

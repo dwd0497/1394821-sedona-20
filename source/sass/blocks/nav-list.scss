@@ -21,6 +21,7 @@
     display: flex;
     align-items: center;
     min-height: $nav-height;
+    flex-wrap: wrap;
 
     &::after {
       display: none;
@@ -72,7 +73,7 @@
     border-bottom: none;
     border-top: none;
 
-    &:nth-child(2) {
+    &:nth-child(4n+2) {
       margin-right: 20%;
     }
   }

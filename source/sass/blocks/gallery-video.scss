@@ -22,26 +22,42 @@
 }
 
 .gallery-video__controls {
-  padding: 0 20px;
+  background-color: $normal-gray;
 
-  position: absolute;
-  bottom: -66px;
-  width: 100%;
+  display: grid;
+
+  width: 280px;
+  margin: 0 auto;
+  margin-top: -45px;
+
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto 66px;
+
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    margin-top: 0;
+    grid-template-rows: 93px;
+    width: 100%;
     bottom: 0;
+    position: absolute;
+    background-color: rgba($color: $basic-black, $alpha: 0.6);
+    grid-template-columns: 93px 1fr 1fr 86px 80px;
   }
 }
 
 .gallery-video__scrollbar {
   background-color: rgba($color: $basic-black, $alpha: 0.6);
-  padding: 22px 23px;
+  padding: 21px 23px;
 
   position: relative;
 
+  grid-row-start: 1;
+  grid-column: 1 / 6;
+
   @media (min-width: $tablet-width) {
-    padding: 45px 166px 45px 93px;
+    background-color: transparent;
+    grid-column: 2 / 4;
+    padding: 45px 0;
   }
 }
 
@@ -53,36 +69,16 @@
 .gallery-video__toggle {
   background-color: $basic-white;
   border-radius: 50%;
-  width: 13px;
-  height: 13px;
+  width: 9px;
+  height: 9px;
 
   position: absolute;
-  top: 16px;
-  left: 56px;
+  top: 19px;
+  left: 58px;
 
   @media (min-width: $tablet-width) {
-    top: 40px;
-    left: 204px;
-  }
-}
-
-.gallery-video__control-btns {
-  background-color: $normal-gray;
-  padding: 23px;
-
-  display: flex;
-  align-items: center;
-
-  @media (min-width: $tablet-width) {
-    background-color: transparent;
-    position: absolute;
-    width: 100%;
-    top: 13px;
-    padding: 23px 38px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 23px 42px 23px 34px;
+    top: 42px;
+    left: 113px;
   }
 }
 
@@ -91,6 +87,41 @@
   border: none;
 
   padding: 0;
+
+  grid-row-start: 2;
+
+  &--repeat {
+    grid-column: 1 / 2;
+    margin-left: 25px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 35px;
+    }
+  }
+
+  &--subs {
+    grid-column: 4 / 5;
+    margin-left: 6px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 42px;
+    }
+  }
+
+  &--fullscreen {
+    grid-column: 5 / 6;
+    margin-left: 13px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 19px;
+    }
+  }
+
+
+  @media (min-width: $tablet-width) {
+    grid-row-start: 1;
+  }
+
 
   svg {
     display: block;
@@ -121,10 +152,5 @@
         opacity: 0.3;
       }
     }
-  }
-
-  &--subs {
-    margin-left: auto;
-    margin-right: 31px;
   }
 }

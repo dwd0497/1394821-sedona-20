@@ -51,6 +51,7 @@
 
       &:nth-child(2) .advantages__item-info {
         order: 1;
+        padding: 42px 45px;
       }
     }
 
@@ -60,6 +61,10 @@
       }
 
       .advantages__item-info {
+        padding: 50px 30px;
+      }
+
+      &:nth-child(2) .advantages__item-info {
         padding: 50px 30px;
       }
 

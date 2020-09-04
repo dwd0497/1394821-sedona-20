@@ -1,11 +1,22 @@
 .map {
+
+  position: relative;
+
   img {
     display: block;
     width: 100%;
     object-fit: cover;
 
+    position: absolute;
+    z-index: -1;
+
     @media (min-width: $tablet-width) {
       height: 350px;
     }
+  }
+
+  iframe {
+    border: none;
+    width: 100%;
   }
 }

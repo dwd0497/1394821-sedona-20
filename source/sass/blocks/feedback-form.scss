@@ -55,15 +55,15 @@
       &:last-child {
         margin-bottom: 0;
       }
+    }
 
-      input {
-        flex-grow: 1;
-        margin-left: 13px;
-        width: 50px;
+    .feedback-form__input {
+      flex-grow: 1;
+      margin-left: 13px;
+      width: 50px;
 
-        padding: 16px 0;
-        text-indent: 22px;
-      }
+      padding: 16px 0;
+      text-indent: 22px;
     }
   }
 
@@ -76,30 +76,30 @@
       &:last-child {
         margin-bottom: 0;
       }
+    }
 
-      label {
-        margin-left: 22px;
-      }
+    .feedback-form__label {
+      margin-left: 22px;
+    }
 
-      input {
-        display: block;
-        width: 100%;
+    .feedback-form__input {
+      display: block;
+      width: 100%;
 
-        padding: 16px 58px 16px 0;
-        margin-top: 8px;
-        text-indent: 22px;
-        background-repeat: no-repeat;
-        background-position: center right 20px, center right;
-        background-size: 18px 18px, 58px 58px;
-      }
+      padding: 16px 58px 16px 0;
+      margin-top: 8px;
+      text-indent: 22px;
+      background-repeat: no-repeat;
+      background-position: center right 20px, center right;
+      background-size: 18px 18px, 58px 58px;
+    }
 
-      .feedback-form__input-tel {
-        background-image: url("../img/phone.svg"), linear-gradient($normal-gray, $normal-gray);
-      }
+    .feedback-form__input-tel {
+      background-image: url("../img/phone.svg"), linear-gradient($normal-gray, $normal-gray);
+    }
 
-      .feedback-form__input-email {
-        background-image: url("../img/mail.svg"), linear-gradient($normal-gray, $normal-gray);
-      }
+    .feedback-form__input-email {
+      background-image: url("../img/mail.svg"), linear-gradient($normal-gray, $normal-gray);
     }
   }
 
@@ -120,14 +120,6 @@
       &:last-child {
         margin-bottom: 20px;
       }
-    }
-
-    input:checked + .feedback-form__radio-label::after {
-      display: block;
-    }
-
-    input:focus + .feedback-form__radio-label::before {
-      outline: 2px solid $outline-color;
     }
   }
 
@@ -197,14 +189,6 @@
     .feedback-form__title {
       padding-top: 17px;
     }
-
-    input:checked + .feedback-form__checkbox-label::after {
-      display: block;
-    }
-
-    input:focus + .feedback-form__checkbox-label::before {
-      outline: 2px solid $outline-color;
-    }
   }
 
   .feedback-form__checkbox-label {
@@ -261,7 +245,7 @@
   @media (min-width: $tablet-width) {
     &--user {
       text-align: left;
-      margin-bottom: 52px;
+      margin-bottom: 57px;
       padding-left: 57px;
 
       width: 50%;
@@ -270,34 +254,46 @@
 
     &--contacts {
       width: 100%;
-      position: relative;
 
       padding-bottom: 32px;
 
-      &::before {
-        content: "";
-        top: 30px;
-        left: 0;
-        position: absolute;
-        width: 19%;
-        height: 1px;
-        background-color: $dividing-line;
-        z-index: 1;
-      }
-
-      &::after {
-        content: "";
-        top: 30px;
-        right: 0;
-        position: absolute;
-        width: 19%;
-        height: 1px;
-        background-color: $dividing-line;
-        z-index: 1;
-      }
-
       .feedback-form__title {
-        margin-bottom: 19px;
+        margin: 0 auto 19px;
+        position: relative;
+
+        &::before {
+          content: "";
+          top: 27px;
+          left: -185px;
+          position: absolute;
+          width: 123px;
+          height: 1px;
+          background-color: $dividing-line;
+          z-index: 1;
+
+          @media (min-width: $desktop-width) {
+            top: 27px;
+            left: -341px;
+            width: 280px;
+          }
+        }
+
+        &::after {
+          content: "";
+          top: 27px;
+          right: -185px;
+          position: absolute;
+          width: 123px;
+          height: 1px;
+          background-color: $dividing-line;
+          z-index: 1;
+
+          @media (min-width: $desktop-width) {
+            top: 27px;
+            right: -341px;
+            width: 280px;
+          }
+        }
       }
 
       .feedback-form__item {
@@ -306,7 +302,7 @@
         margin-bottom: 25px;
       }
 
-      label {
+      .feedback-form__label {
         text-align: left;
       }
     }
@@ -331,30 +327,41 @@
 
       position: relative;
 
-      &::before {
-        content: "";
-        top: 40px;
-        left: 0;
-        position: absolute;
-        width: 19%;
-        height: 1px;
-        background-color: $dividing-line;
-        z-index: 1;
-      }
-
-      &::after {
-        content: "";
-        top: 40px;
-        right: 0;
-        position: absolute;
-        width: 19%;
-        height: 1px;
-        background-color: $dividing-line;
-        z-index: 1;
-      }
-
       .feedback-form__title {
-        margin-bottom: 58px;
+        margin: 0 auto 58px;
+        position: relative;
+
+        &::before {
+          content: "";
+          top: 43px;
+          left: -145px;
+          position: absolute;
+          width: 123px;
+          height: 1px;
+          background-color: $dividing-line;
+          z-index: 1;
+
+          @media (min-width: $desktop-width) {
+            left: -305px;
+            width: 280px;
+          }
+        }
+
+        &::after {
+          content: "";
+          top: 43px;
+          right: -145px;
+          position: absolute;
+          width: 123px;
+          height: 1px;
+          background-color: $dividing-line;
+          z-index: 1;
+
+          @media (min-width: $desktop-width) {
+            right: -305px;
+            width: 280px;
+          }
+        }
       }
 
       .feedback-form__list {
@@ -387,29 +394,41 @@
       position: relative;
 
       .feedback-form__title {
-        margin-bottom: 70px;
-      }
+        margin: 0 auto 64px;
+        padding-top: 22px;
+        position: relative;
 
-      &::before {
-        content: "";
-        top: 30px;
-        left: 0;
-        position: absolute;
-        width: 19%;
-        height: 1px;
-        background-color: $dividing-line;
-        z-index: 1;
-      }
+        &::before {
+          content: "";
+          top: 32px;
+          left: -195px;
+          position: absolute;
+          width: 123px;
+          height: 1px;
+          background-color: $dividing-line;
+          z-index: 1;
 
-      &::after {
-        content: "";
-        top: 30px;
-        right: 0;
-        position: absolute;
-        width: 19%;
-        height: 1px;
-        background-color: $dividing-line;
-        z-index: 1;
+          @media (min-width: $desktop-width) {
+            left: -355px;
+            width: 280px;
+          }
+        }
+
+        &::after {
+          content: "";
+          top: 32px;
+          right: -195px;
+          position: absolute;
+          width: 123px;
+          height: 1px;
+          background-color: $dividing-line;
+          z-index: 1;
+
+          @media (min-width: $desktop-width) {
+            right: -355px;
+            width: 280px;
+          }
+        }
       }
     }
   }
@@ -437,8 +456,12 @@
       .feedback-form__list {
         display: flex;
         justify-content: space-between;
-        margin-top: 48px;
+        margin-top: 45px;
         flex-wrap: wrap;
+      }
+
+      .feedback-form__title {
+        padding-top: 15px;
       }
 
       .feedback-form__item {
@@ -447,18 +470,22 @@
         align-items: center;
         margin: 0;
 
-        label {
-          margin-left: 0;
-          margin-right: 16px;
-        }
-
         &:nth-child(2n+1) {
           width: 42%;
         }
       }
 
+      .feedback-form__input {
+        margin-left: 0;
+      }
+
       .feedback-form__item-span {
         display: none;
+      }
+
+      .feedback-form__label {
+        margin-left: 0;
+        margin-right: 17px;
       }
     }
 
@@ -506,12 +533,11 @@
       }
 
       .feedback-form__title {
-        margin-bottom: 66px;
+        margin-bottom: 62px;
       }
     }
   }
 }
-
 
 .feedback-form__title {
   @include font-set(18px, 26px, bold);
@@ -599,4 +625,21 @@
 
 .feedback-form__required {
   display: none;
+}
+
+.feedback-form__input:checked + .feedback-form__radio-label::after {
+  display: block;
+}
+
+.feedback-form__input:focus + .feedback-form__radio-label::before {
+  outline: 2px solid $outline-color;
+}
+
+
+.feedback-form__input:checked + .feedback-form__checkbox-label::after {
+  display: block;
+}
+
+.feedback-form__input:focus + .feedback-form__checkbox-label::before {
+  outline: 2px solid $outline-color;
 }
