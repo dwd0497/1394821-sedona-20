@@ -129,4 +129,8 @@
 
 .no-js .nav-list {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
